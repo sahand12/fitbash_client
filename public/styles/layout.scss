@@ -1,0 +1,13 @@
+@import "vars";
+.layout-header {
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid $headerBorderBottom;
+  //background-color: $mountainMeadow;
+}
+.layout-nav {
+  height: 100%;
+  //width: 100%;
+  //max-width: 1366px;
+  padding: 0 8px;
+}

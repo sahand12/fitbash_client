@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+html, body, p, div, form {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: 'Sahel', sans-serif;
+  color: #003300; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.layout-header {
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1; }
+
+.layout-nav {
+  height: 100%;
+  padding: 0 8px; }
+
+.fbNav {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.48rem; }
+
+.fbNav > section {
+  height: 40px;
+  display: flex;
+  align-items: center; }
+
+.fbNav > section > a {
+  margin: 0 9px; }
+
+/*# sourceMappingURL=index.css.map */

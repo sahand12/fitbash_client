@@ -1,0 +1,12 @@
+@import "vars.scss";
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Sahel', sans-serif;
+  color: $bodyTextColor;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
