@@ -1,0 +1,39 @@
+@import "vars";
+.fbBtn {
+  display: inline-block;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  }
+.fbBtn-primary {
+  color: white;
+  background-color: $primaryBtnBgColor;
+
+  &:hover {
+    background-color: darken($primaryBtnBgColor, 8%);
+  }
+
+  &:active {
+    background-color: $yellow;
+  }
+}
+.fbBtn-bare {
+  background-color: inherit;
+  color: inherit;
+  padding: 0;
+}
+.fbBtn-square-m {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+.fbBtn-square-l {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}

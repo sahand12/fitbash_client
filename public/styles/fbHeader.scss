@@ -1,0 +1,76 @@
+@import "vars";
+.fbNav {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fbNav--list{
+  display: flex;
+  align-items: center;
+}
+.fbNav--listItem {
+  display: none;
+}
+
+.fbNav--mobileList {
+  padding: 0 20px;
+  list-style-type: none;
+  position: relative;
+  top: -1px;
+  width: 100%;
+  z-index: 10;
+  transition: height 1s;
+  border-bottom: 1px solid $zircon;
+}
+.fbNav--mobileListItem {
+  height: 25px;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  padding-right: 0;
+  line-height: 25px;
+
+  &:hover {
+    color: $linkHoverTextColor;
+  }
+}
+.fbLogo {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 3.1rem;
+}
+.fbNav--listItem {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .fbNav--bars {
+    display: none;
+  }
+  .fbNav--mobileList {
+    display: none;
+  }
+  .fbNav--listItem {
+    display: block;
+    margin: 0 9px;
+    height: 100%;
+    line-height: 64px; // @FIXME
+
+    &:hover {
+      color: $linkHoverTextColor;
+    }
+  }
+
+  //.fbNav--listItem {
+  //  display: flex;
+  //  align-items: center;
+  //}
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+

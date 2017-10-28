@@ -1,12 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
   context: __dirname,
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8081',
+    'webpack-dev-server/client?http://127.0.0.1:3000',
     'webpack/hot/only-dev-server',
     './src/ClientApp.jsx'
   ],
@@ -38,15 +37,12 @@ const config = {
   devServer: {
     hot: true,
     publicPath: '/public/',
-    historyApiFallback: true, // let react router handle all the routes
+    historyApiFallback: true, // let react router handle all the routes,
+    port: 3000,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-//    new ExtractTextPlugin({ // define where to save the file
-//      filename: '/public/[name].bundle.css',
-//      allChunks: true,
-//    }),
   ],
 };
 
