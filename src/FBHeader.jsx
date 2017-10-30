@@ -55,33 +55,24 @@ class FBHeader extends Component<HeaderPropTypes, {isMobileNavVisible: boolean}>
             </section>
           </nav>
         </div>
-
-        <FBMobileNavList i18n={this.props.i18n} sliderClosed={!this.state.isMobileNavVisible}/>
+        
+        <FBMobileNavList
+          i18n={this.props.i18n}
+          sliderIsClosed={!this.state.isMobileNavVisible}
+        />
       </header>
     );
   }
 }
 
-const FBMobileNavList = (props: {i18n: TRANSLATIONS, sliderClosed: boolean}) => (
-  <ul className={`fbNav--mobileList fbSlider${(props.sliderClosed ? ' fbSlider-is-closed' : '')}`}>
-    <li>
-      <Link className='fbNav--mobileListItem' to='/menu' href='/menu'>{props.i18n.onTheMenu}</Link>
-    </li>
-    <li>
-      <Link className="fbNav--mobileListItem" to='/about-us' href='/about-us'>{props.i18n.aboutUs}</Link>
-    </li>
-    <li>
-      <Link className="fbNav--mobileListItem" to='/our-mission' href='/our-mission'>{props.i18n.ourMission}</Link>
-    </li>
-    <li>
-      <Link className="fbNav--mobileListItem" to='/our-mission' href='/how-it-works'>{props.i18n.howItWorks2}</Link>
-    </li>
-    <li>
-      <Link className="fbNav--mobileListItem" to='/our-mission' href='/get-20$'>{props.i18n.get20$}</Link>
-    </li>
-    <li>
-      <Link className="fbNav--mobileListItem" to='/our-mission' href='/login'>{props.i18n.logIn}</Link>
-    </li>
+const FBMobileNavList = (props: {i18n: TRANSLATIONS, sliderIsClosed: boolean}) => (
+  <ul className={`fbNav--mobileList fbSlider${(props.sliderIsClosed ? ' fbSlider-is-closed' : '')}`}>
+    <li><Link to='/menu' href='/menu'>{props.i18n.onTheMenu}</Link></li>
+    <li><Link to='/about-us' href='/about-us'>{props.i18n.aboutUs}</Link>
+    </li><li><Link to='/our-mission' href='/our-mission'>{props.i18n.ourMission}</Link></li>
+    <li><Link to='/how-it-works' href='/how-it-works'>{props.i18n.howItWorks2}</Link></li>
+    <li><Link to='/get-20$' href='/get-20$'>{props.i18n.get20$}</Link></li>
+    <li><Link to='/login' href='/login'>{props.i18n.logIn}</Link></li>
   </ul>
 );
 

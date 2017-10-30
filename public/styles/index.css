@@ -6,17 +6,17 @@
 *:before {
   box-sizing: inherit; }
 
-html, body, p, div, form {
+html, body, p, div, form, ul, ol {
   padding: 0;
   margin: 0;
   border: none;
   outline: none; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  font-family: 'iranYekanWeb', 'WeblogmaYekan', sans-serif; }
 
 body {
-  font-family: 'Sahel', sans-serif;
   color: #003300; }
 
 a {
@@ -26,28 +26,114 @@ a {
 .layout-header {
   height: 64px;
   width: 100%;
-  border-bottom: 1px solid #e1e1e1; }
+  font-size: 1.28rem; }
 
 .layout-nav {
   height: 100%;
-  padding: 0 8px; }
+  padding: 0 20px; }
+
+@media only screen and (min-width: 768px) {
+  .layout-header {
+    border-bottom: 1px solid #e1e1e1; } }
+.fbBtn {
+  display: inline-block;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center; }
+
+.fbBtn-primary {
+  color: white;
+  background-color: #33bb77; }
+  .fbBtn-primary:hover {
+    background-color: #2a9b63; }
+  .fbBtn-primary:active {
+    background-color: #f2b90c; }
+
+.fbBtn-bare {
+  background-color: inherit;
+  color: inherit;
+  padding: 0; }
+
+.fbBtn-square-m {
+  width: 20px;
+  height: 20px;
+  font-size: 20px; }
+
+.fbBtn-square-l {
+  width: 30px;
+  height: 30px;
+  font-size: 30px; }
 
 .fbNav {
   height: 100%;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 1.48rem; }
+  align-items: center; }
 
-.fbNav > section {
-  height: 40px;
+.fbNav--list {
   display: flex;
   align-items: center; }
 
-.fbNav > section > a {
-  margin: 0 9px; }
+.fbNav--listItem {
+  display: none; }
+
+.fbNav--mobileList {
+  user-select: none;
+  list-style-type: none;
+  position: relative;
+  top: -1px;
+  width: 100%;
+  z-index: 10;
+  transition: height 1s;
+  border-bottom: 1px solid #e1e1e1; }
+  .fbNav--mobileList > li {
+    width: 100%; }
+    .fbNav--mobileList > li > a {
+      padding: 10px 20px;
+      height: 25px;
+      display: block;
+      line-height: 25px; }
+      .fbNav--mobileList > li > a:hover {
+        color: #33bb77; }
+
+.fbLogo {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 2.7rem; }
+
+.fbNav--listItem {
+  display: none; }
+
+@media only screen and (min-width: 768px) {
+  .fbNav--bars {
+    display: none; }
+
+  .fbNav--mobileList {
+    display: none; }
+
+  .fbNav--listItem {
+    display: block;
+    margin: 0 14px;
+    height: 100%;
+    line-height: 64px; }
+    .fbNav--listItem:hover {
+      color: #33bb77; } }
+.fbSlider {
+  overflow-y: hidden;
+  max-height: 270px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.5, 1); }
+
+.fbSlider-is-closed {
+  max-height: 1px; }
 
 /*# sourceMappingURL=index.css.map */

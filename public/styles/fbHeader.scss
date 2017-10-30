@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,9 +16,8 @@
 .fbNav--listItem {
   display: none;
 }
-
 .fbNav--mobileList {
-  padding: 0 20px;
+  user-select: none;
   list-style-type: none;
   position: relative;
   top: -1px;
@@ -25,22 +25,22 @@
   z-index: 10;
   transition: height 1s;
   border-bottom: 1px solid $zircon;
-}
-.fbNav--mobileListItem {
-  height: 25px;
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  padding-right: 0;
-  line-height: 25px;
-
-  &:hover {
-    color: $linkHoverTextColor;
+  & > li {
+    width: 100%;
+    & > a {
+      padding: 10px 20px;
+      height: 25px;
+      display: block;
+      line-height: 25px;
+      &:hover {
+        color: $linkHoverTextColor;
+      }
+    }
   }
 }
 .fbLogo {
   font-family: 'Reem Kufi', sans-serif;
-  font-size: 3.1rem;
+  font-size: 2.7rem;
 }
 .fbNav--listItem {
   display: none;
@@ -55,7 +55,7 @@
   }
   .fbNav--listItem {
     display: block;
-    margin: 0 9px;
+    margin: 0 14px;
     height: 100%;
     line-height: 64px; // @FIXME
 
@@ -63,11 +63,6 @@
       color: $linkHoverTextColor;
     }
   }
-
-  //.fbNav--listItem {
-  //  display: flex;
-  //  align-items: center;
-  //}
 }
 
 @media only screen and (min-width: 992px) {
