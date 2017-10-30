@@ -2,13 +2,14 @@
 .layout-header {
   height: 64px;
   width: 100%;
-  font-size: 1.28rem;
 }
 .layout-nav {
   height: 100%;
   padding: 0 20px;
 }
-
+.layout-footer {
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   .layout-header {
     border-bottom: 1px solid $headerBorderBottom;

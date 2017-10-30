@@ -46,6 +46,19 @@
   display: none;
 }
 
+.fbSlider {
+  overflow-y: hidden;
+  max-height: 270px;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.5, 1);
+}
+.fbSlider-is-closed {
+  max-height: 1px;
+}
+
+
 @media only screen and (min-width: 768px) {
   .fbNav--bars {
     display: none;
@@ -55,7 +68,7 @@
   }
   .fbNav--listItem {
     display: block;
-    margin: 0 14px;
+    padding: 0 14px;
     height: 100%;
     line-height: 64px; // @FIXME
 

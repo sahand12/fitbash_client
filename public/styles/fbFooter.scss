@@ -1,0 +1,31 @@
+@import "vars";
+.fbFooter {
+
+}
+.fbFooter--mobile {}
+.fbFooter--mobileList{
+  display: flex;
+  justify-content: center;
+  max-width: 290px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: lavender;
+
+  & > li {
+
+  }
+}
+.fbFooter--mobileListItem {
+}
+.fbFooter--desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .fbFooter--mobile {
+    display: none;
+  }
+  .fbFooter--desktop {
+
+  }
+}
