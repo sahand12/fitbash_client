@@ -7,7 +7,6 @@ import Landing from './Landing';
 const App = () => (
   <BrowserRouter>
     <Route exact path='/' component={Landing} />
-    
   </BrowserRouter>
 );
 

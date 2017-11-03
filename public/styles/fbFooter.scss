@@ -1,31 +1,92 @@
+
 @import "vars";
 .fbFooter {
+  padding: 25px 0;
+  //background-color: beige;
+  font-size: 1.3rem;
+  color: $footerLinkColor;
 
+  a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
 }
 .fbFooter--mobile {}
 .fbFooter--mobileList{
   display: flex;
   justify-content: center;
-  max-width: 290px;
+  flex-wrap: wrap;
+  max-width: 340px;
   margin: 0 auto;
   width: 100%;
-  background-color: lavender;
-
-  & > li {
-
-  }
+  padding-bottom: 15px;
 }
-.fbFooter--mobileListItem {
+.fbFooter--mobileListItem {}
+.fbFooter--mobileSocialLinks {
+  display: flex;
+  justify-content: space-around;
+  max-width: 240px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+.fbFooter--mobileCopyRight {
+  color: darken($zircon, 30%);
+  font-size: 1.1rem;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
 }
 .fbFooter--desktop {
   display: none;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
+.fbFooter--desktopCol {
+  //background-color: azure;
+  text-align: right;
+  padding: 0 10px;
+  > li {
+    a {
+      padding: 6px 0;
+      display: inline-block;
+      height: 100%;
+    }
+  }
+}
+.fbFooter--desktopColHeading {
+  color: $bodyTextColor;
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.fbFooter--desktopLogo {
+  font-size: 2.7rem;
+  font-family: 'Reem Kufi', 'iranYekanWeb', sans-serif;
+  color: $bodyTextColor;
+  margin-bottom: 1rem;
+}
+.fbFooter--desktopColSocialHeading {
+  margin-bottom: 1.5rem;
+}
+.fbFooter--desktopColSocialRow {
+  width: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
 
+  a:hover {
+    text-decoration: none;
+  }
+}
 @media only screen and (min-width: 768px) {
   .fbFooter--mobile {
     display: none;
   }
   .fbFooter--desktop {
-
+    display: flex;
   }
 }

@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 const config = {
   context: __dirname,
@@ -43,6 +44,7 @@ const config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new DashboardPlugin({port: 3000}),
   ],
 };
 

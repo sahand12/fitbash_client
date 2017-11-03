@@ -4,10 +4,7 @@ import {Link} from 'react-router-dom';
 
 import type {TRANSLATIONS} from './i18n/fa';
 
-type HeaderPropTypes = {
-  i18n: TRANSLATIONS
-};
-class FBHeader extends Component<HeaderPropTypes, {isMobileNavVisible: boolean}> {
+class FBHeader extends Component<{i18n: TRANSLATIONS}, {isMobileNavVisible: boolean}> {
   state = {
     isMobileNavVisible: false
   };
@@ -24,7 +21,7 @@ class FBHeader extends Component<HeaderPropTypes, {isMobileNavVisible: boolean}>
                 className="fbBtn fbBtn-bare fbBtn-square-m fbNav--bars"
                 onClick={this.toggleMobileNav}
               >
-                <i className="icon-bars-large" />
+                <i className="icon-bars" />
               </button>
               <Link className="fbNav--listItem" to='/menu' href='/menu'>
                 {this.props.i18n.onTheMenu}

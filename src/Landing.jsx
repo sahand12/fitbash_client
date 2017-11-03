@@ -6,11 +6,9 @@ import FBFooter from './FBFooter';
 import FA from './i18n/fa';
 
 const Landing = () => (
-  <div>
+  <div className='layout-container'>
     <FBHeader i18n={FA}/>
-    <div className='layout-footer'>
-      <FBFooter i18n={FA}/>
-    </div>
+    <FBFooter i18n={FA}/>
   </div>
 );
 

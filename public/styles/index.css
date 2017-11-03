@@ -21,20 +21,42 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  cursor: pointer; }
+
+ul, ol {
+  list-style-type: none; }
+
+[class*="icon-"] {
+  text-decoration: none !important; }
 
 .layout-header {
   height: 64px;
-  width: 100%;
-  font-size: 1.28rem; }
+  width: 100%; }
 
 .layout-nav {
   height: 100%;
   padding: 0 20px; }
 
+.layout-footer {
+  width: 100%; }
+
 @media only screen and (min-width: 768px) {
   .layout-header {
     border-bottom: 1px solid #e1e1e1; } }
+@media only screen and (min-width: 1366px) {
+  .layout-footer {
+    max-width: 1350px;
+    margin: 0 auto; } }
+.fbLinkBox {
+  color: inherit;
+  font: inherit;
+  display: inline-block;
+  padding: 6px 12px; }
+
+.fbLinkBox-square {
+  padding: 12px 12px; }
+
 .fbBtn {
   display: inline-block;
   padding: 6px 12px;
@@ -88,7 +110,7 @@ a {
 
 .fbNav--mobileList {
   user-select: none;
-  list-style-type: none;
+  background-color: white;
   position: relative;
   top: -1px;
   width: 100%;
@@ -112,20 +134,6 @@ a {
 .fbNav--listItem {
   display: none; }
 
-@media only screen and (min-width: 768px) {
-  .fbNav--bars {
-    display: none; }
-
-  .fbNav--mobileList {
-    display: none; }
-
-  .fbNav--listItem {
-    display: block;
-    margin: 0 14px;
-    height: 100%;
-    line-height: 64px; }
-    .fbNav--listItem:hover {
-      color: #33bb77; } }
 .fbSlider {
   overflow-y: hidden;
   max-height: 270px;
@@ -135,5 +143,97 @@ a {
 
 .fbSlider-is-closed {
   max-height: 1px; }
+
+@media only screen and (min-width: 768px) {
+  .fbNav--bars {
+    display: none; }
+
+  .fbNav--mobileList {
+    display: none; }
+
+  .fbNav--listItem {
+    display: block;
+    padding: 0 14px;
+    height: 100%;
+    line-height: 64px; }
+    .fbNav--listItem:hover {
+      color: #33bb77; } }
+.fbFooter {
+  padding: 25px 0;
+  font-size: 1.3rem;
+  color: #666666; }
+  .fbFooter a:hover {
+    text-decoration: underline;
+    color: #000; }
+
+.fbFooter--mobileList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 340px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 15px; }
+
+.fbFooter--mobileSocialLinks {
+  display: flex;
+  justify-content: space-around;
+  max-width: 240px;
+  margin: 0 auto;
+  font-size: 1.8rem; }
+
+.fbFooter--mobileCopyRight {
+  color: #959595;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center; }
+
+.fbFooter--desktop {
+  display: none;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 1.1rem; }
+
+.fbFooter--desktopCol {
+  text-align: right;
+  padding: 0 10px; }
+  .fbFooter--desktopCol > li a {
+    padding: 6px 0;
+    display: inline-block;
+    height: 100%; }
+
+.fbFooter--desktopColHeading {
+  color: #003300;
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 1rem; }
+
+.fbFooter--desktopLogo {
+  font-size: 2.7rem;
+  font-family: 'Reem Kufi', 'iranYekanWeb', sans-serif;
+  color: #003300;
+  margin-bottom: 1rem; }
+
+.fbFooter--desktopColSocialHeading {
+  margin-bottom: 1.5rem; }
+
+.fbFooter--desktopColSocialRow {
+  width: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 0.5rem; }
+  .fbFooter--desktopColSocialRow a:hover {
+    text-decoration: none; }
+
+@media only screen and (min-width: 768px) {
+  .fbFooter--mobile {
+    display: none; }
+
+  .fbFooter--desktop {
+    display: flex; } }
 
 /*# sourceMappingURL=index.css.map */
