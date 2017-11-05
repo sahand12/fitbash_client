@@ -28,6 +28,7 @@
   & > li {
     width: 100%;
     & > a {
+      font-size: 1.18rem;
       padding: 10px 20px;
       height: 25px;
       display: block;
@@ -51,7 +52,7 @@
   max-height: 270px;
 
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0, 0.8, 0.5, 1);
 }
 .fbSlider-is-closed {

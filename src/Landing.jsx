@@ -3,12 +3,16 @@ import React from 'react';
 
 import FBHeader from './FBHeader';
 import FBFooter from './FBFooter';
-import FA from './i18n/fa';
+// import FBHero from './FBHero';
+
 
 const Landing = () => (
   <div className='layout-container'>
-    <FBHeader i18n={FA}/>
-    <FBFooter i18n={FA}/>
+    <div className="layout-content">
+      <FBHeader/>
+   
+    </div>
+    <FBFooter/>
   </div>
 );
 

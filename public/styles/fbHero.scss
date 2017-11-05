@@ -1,0 +1,36 @@
+@import "vars";
+.fbHeroWrapper {
+  width: 100%;
+  position: relative;
+}
+.fbHeroWrapper--image {
+  background-image: url('/public/img/homepage_steakpepp_hero_tablet.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 30vh;
+}
+.fbHero {
+
+}
+
+@media only screen and (min-width: 768px) {
+  .fbHeroWrapper--image {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fbHeroWrapper--image {
+    display: none;
+  }
+  .fbHeroWrapper {
+    min-height: 600px;
+    background-image: url('/public/img/homepage_steakpepp_hero_desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    backgroun-position: left bottom 78%;
+  }
+}

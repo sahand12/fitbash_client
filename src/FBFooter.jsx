@@ -2,21 +2,21 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-import type {TRANSLATIONS} from './i18n/fa';
+import t from './i18n';
 
-class FBFooter extends Component<{i18n: TRANSLATIONS}, {}> {
+class FBFooter extends Component<{}, {}> {
   shouldComponentUpdate() {
     return false;
   }
   
   render() {
     return (
-      <div className="layout-footer">
-        <footer className='fbFooter'>
-          <FBFooterMobile {...this.props} />
-          <FBFooterDesktop {...this.props} />
-        </footer>
-      </div>
+      <footer className="layout-footer">
+        <div className='fbFooter'>
+          <FBFooterMobile/>
+          <FBFooterDesktop/>
+        </div>
+      </footer>
     );
   }
 }
@@ -35,18 +35,18 @@ const FOOTER_SOCIAL_LINKS = {
   telegram: 'https://telegram.me/fitbash',
   instagram: 'https://instagram.com/fitbash',
 };
-const FBFooterMobile = (props: {i18n: TRANSLATIONS}) =>(
+const FBFooterMobile = () =>(
   <div className='fbFooter--mobile'>
     <ul className='fbFooter--mobileList'>
       {Object.keys(FOOTER_MOBILE_LINKS)
-        .map(key => (<FBFooterMobileItem key={key} content={props.i18n[key]} where={FOOTER_MOBILE_LINKS[key]}/>))}
+        .map(key => (<FBFooterMobileItem key={key} content={t([`common.${key}`])} where={FOOTER_MOBILE_LINKS[key]}/>))}
     </ul>
     <ul className='fbFooter--mobileSocialLinks'>
       {Object.keys(FOOTER_SOCIAL_LINKS)
         .map(key => (<FBFooterMobileItem key={key} content='' where={FOOTER_SOCIAL_LINKS[key]} iconClass={`icon-${key}`}/>))}
     </ul>
     {/* @TODO: make year dynamic */}
-    <div className='fbFooter--mobileCopyRight'>© {props.i18n.fitbash} ۱۳۹۶</div>
+    <div className='fbFooter--mobileCopyRight'>© {t('common.fitbash')} ۱۳۹۶</div>
   </div>
 );
 
@@ -62,35 +62,35 @@ const FBFooterMobileItem = (props: {content: string, where: string, iconClass?: 
 FBFooterMobileItem.defaultProps = {
   iconClass: undefined,
 };
-const FBFooterDesktop = (props: {i18n: TRANSLATIONS}) => (
+const FBFooterDesktop = () => (
   <div className='fbFooter--desktop'>
     <ul className='fbFooter--desktopCol'>
-      <li className='fbFooter--desktopLogo'>{props.i18n.fitbash}</li>
-      <li>{`© ${props.i18n.fitbash} ۱۳۹۶`}</li>
+      <li className='fbFooter--desktopLogo'>{t('common.fitbash')}</li>
+      <li>{`© ${t('common.fitbash')} ۱۳۹۶`}</li>
     </ul>
     <FBFooterDesktopCol
-      heading={props.i18n.company}
+      heading={t('common.company')}
       items={[
-        {name: props.i18n.careers, where: '/careers'},
-        {name: props.i18n.contactUs, where: '/contact-us'},
-        {name: props.i18n.termsOfUse, where: '/terms'},
-        {name: props.i18n.privacy, where: '/privacy'},
+        {name: t('common.careers'), where: '/careers'},
+        {name: t('common.contactUs'), where: '/contact-us'},
+        {name: t('common.termsOfUse'), where: '/terms'},
+        {name: t('common.privacy'), where: '/privacy'},
       ]}
     />
     <FBFooterDesktopCol
-      heading={props.i18n.learnMore}
+      heading={t('common.learnMore')}
       items={[
-        {name: props.i18n.onTheMenu, where: '/menu'},
-        {name: props.i18n.aboutUs, where: '/about-us'},
-        {name: props.i18n.ourMission, where: 'our-mission'},
-        {name: props.i18n.howItWorks2,where: '/how-it-works'},
-        {name: props.i18n.get20$, where: '/get-20$'},
-        {name: props.i18n.faqs, where: '/faqs'},
-        {name: props.i18n.blog, where: '/blog'}
+        {name: t('common.onTheMenu'), where: '/menu'},
+        {name: t('common.aboutUs'), where: '/about-us'},
+        {name: t('common.ourMission'), where: 'our-mission'},
+        {name: t('common.howItWorks') ,where: '/how-it-works'},
+        {name: t('common.get20$'), where: '/get-20$'},
+        {name: t('common.faqs'), where: '/faqs'},
+        {name: t('common.blog'), where: '/blog'},
       ]}
     />
     <ul className="fbFooter--desktopCol">
-      <li className='fbFooter--desktopColHeading fbFooter--desktopColSocialHeading'>{props.i18n.joinUs}</li>
+      <li className='fbFooter--desktopColHeading fbFooter--desktopColSocialHeading'>{t('common.joinUs')}</li>
       <li className='fbFooter--desktopColSocialRow'>
         <Link href={FOOTER_SOCIAL_LINKS.facebook} to={FOOTER_SOCIAL_LINKS.facebook}><i className='icon-facebook'/></Link>
         <Link href={FOOTER_SOCIAL_LINKS.instagram} to={FOOTER_SOCIAL_LINKS.instagram}><i className='icon-instagram'/></Link>

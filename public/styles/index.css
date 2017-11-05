@@ -6,7 +6,7 @@
 *:before {
   box-sizing: inherit; }
 
-html, body, p, div, form, ul, ol {
+html, body, p, div, form, ul, ol, h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   border: none;
@@ -30,6 +30,18 @@ ul, ol {
 [class*="icon-"] {
   text-decoration: none !important; }
 
+/** sticky footer **/
+html, body, #app, .layout-container {
+  height: 100%; }
+
+.layout-container {
+  display: flex;
+  flex-direction: column; }
+
+.layout-content {
+  flex: 1 0 auto; }
+
+/** end of sticky footer **/
 .layout-header {
   height: 64px;
   width: 100%; }
@@ -37,6 +49,9 @@ ul, ol {
 .layout-nav {
   height: 100%;
   padding: 0 20px; }
+
+.layout-hero {
+  width: 100%; }
 
 .layout-footer {
   width: 100%; }
@@ -120,6 +135,7 @@ ul, ol {
   .fbNav--mobileList > li {
     width: 100%; }
     .fbNav--mobileList > li > a {
+      font-size: 1.18rem;
       padding: 10px 20px;
       height: 25px;
       display: block;
@@ -138,7 +154,7 @@ ul, ol {
   overflow-y: hidden;
   max-height: 270px;
   transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0, 0.8, 0.5, 1); }
 
 .fbSlider-is-closed {
@@ -159,7 +175,8 @@ ul, ol {
     .fbNav--listItem:hover {
       color: #33bb77; } }
 .fbFooter {
-  padding: 25px 0;
+  padding: 25px 0 20px 0;
+  border-top: 1px solid #e1e1e1;
   font-size: 1.3rem;
   color: #666666; }
   .fbFooter a:hover {
@@ -181,6 +198,8 @@ ul, ol {
   max-width: 240px;
   margin: 0 auto;
   font-size: 1.8rem; }
+  .fbFooter--mobileSocialLinks a:hover {
+    text-decoration: none; }
 
 .fbFooter--mobileCopyRight {
   color: #959595;
@@ -235,5 +254,32 @@ ul, ol {
 
   .fbFooter--desktop {
     display: flex; } }
+.fbHeroWrapper {
+  width: 100%;
+  position: relative; }
+
+.fbHeroWrapper--image {
+  background-image: url("/public/img/homepage_steakpepp_hero_tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 30vh; }
+
+@media only screen and (min-width: 768px) {
+  .fbHeroWrapper--image {
+    height: 40vh; } }
+@media only screen and (min-width: 992px) {
+  .fbHeroWrapper--image {
+    display: none; }
+
+  .fbHeroWrapper {
+    min-height: 600px;
+    background-image: url("/public/img/homepage_steakpepp_hero_desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    backgroun-position: left bottom 78%; } }
 
 /*# sourceMappingURL=index.css.map */
