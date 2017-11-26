@@ -1,0 +1,36 @@
+@import "vars";
+.fbInput {
+  display: block;
+  width: calc(100% - 26px);
+  background-color: white;
+  padding: 4px 12px;
+  border: 1px solid $zircon;
+  border-radius: 1px;
+  line-height: 30px;
+  font-family: inherit;
+  font-size: 1.3rem;
+  color: inherit;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  &::placeholder {
+    letter-spacing: 0;
+  }
+}
+.fbInput-rightLeft {
+  direction: rtl;
+  &::placeholder {
+    direction: ltr;
+  }
+}
+.fbInput-leftRight {
+  direction: ltr;
+  &::placeholder {
+    direction: rtl;
+  }
+}
+.fbInput-danger {
+  border-color: crimson;
+}
+.fbInput-success {
+  border-color: $mountainMeadow;
+}

@@ -92,12 +92,12 @@ const FBFooterDesktop = () => (
     <ul className="fbFooter--desktopCol">
       <li className='fbFooter--desktopColHeading fbFooter--desktopColSocialHeading'>{t('common.joinUs')}</li>
       <li className='fbFooter--desktopColSocialRow'>
-        <Link href={FOOTER_SOCIAL_LINKS.facebook} to={FOOTER_SOCIAL_LINKS.facebook}><i className='icon-facebook'/></Link>
-        <Link href={FOOTER_SOCIAL_LINKS.instagram} to={FOOTER_SOCIAL_LINKS.instagram}><i className='icon-instagram'/></Link>
+        <Link className='fbFooter--desktopColSocialIcon' href={FOOTER_SOCIAL_LINKS.facebook} to={FOOTER_SOCIAL_LINKS.facebook}><i className='icon-facebook'/></Link>
+        <Link className='fbFooter--desktopColSocialIcon' href={FOOTER_SOCIAL_LINKS.instagram} to={FOOTER_SOCIAL_LINKS.instagram}><i className='icon-instagram'/></Link>
       </li>
       <li className='fbFooter--desktopColSocialRow'>
-        <Link href={FOOTER_SOCIAL_LINKS.telegram} to={FOOTER_SOCIAL_LINKS.telegram}><i className='icon-telegram'/></Link>
-        <Link href={FOOTER_SOCIAL_LINKS.twitter} to={FOOTER_SOCIAL_LINKS.twitter}><i className='icon-twitter'/></Link>
+        <Link className='fbFooter--desktopColSocialIcon' href={FOOTER_SOCIAL_LINKS.telegram} to={FOOTER_SOCIAL_LINKS.telegram}><i className='icon-telegram'/></Link>
+        <Link className='fbFooter--desktopColSocialIcon' href={FOOTER_SOCIAL_LINKS.twitter} to={FOOTER_SOCIAL_LINKS.twitter}><i className='icon-twitter'/></Link>
       </li>
     </ul>
   </div>
@@ -110,7 +110,7 @@ const FBFooterDesktopCol = (props: {
   <ul className='fbFooter--desktopCol'>
     <li className='fbFooter--desktopColHeading'>{props.heading}</li>
     {props.items.map(item => (
-      <li key={item.where}>
+      <li className='fbFooter--desktopColItem' key={item.where}>
         <Link href={item.where} to={item.where}>{item.name}</Link>
       </li>
     ))}

@@ -17,3 +17,16 @@ ul, ol {
 [class*="icon-"] {
   text-decoration: none !important;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: darken($zircon, 20);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: darken($zircon, 20);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: darken($zircon, 20);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: darken($zircon, 20);
+}

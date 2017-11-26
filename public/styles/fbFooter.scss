@@ -3,11 +3,9 @@
 .fbFooter {
   padding: 25px 0 20px 0;
   border-top: 1px solid $zircon;
-  font-size: 1.3rem;
   color: $footerLinkColor;
-
   a:hover {
-    text-decoration: underline;
+    //text-decoration: underline;
     color: #000;
   }
 }
@@ -21,15 +19,22 @@
   width: 100%;
   padding-bottom: 15px;
 }
-.fbFooter--mobileListItem {}
+.fbFooter--mobileListItem {
+  font-size: 1.3rem;
+  a:hover {
+    text-decoration: underline;
+  }
+}
 .fbFooter--mobileSocialLinks {
   display: flex;
   justify-content: space-around;
   max-width: 240px;
   margin: 0 auto;
-  font-size: 1.8rem;
-  a:hover {
-    text-decoration: none;
+  a{
+    font-size: 1.8rem;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 .fbFooter--mobileCopyRight {
@@ -48,14 +53,17 @@
   font-size: 1.1rem;
 }
 .fbFooter--desktopCol {
-  //background-color: azure;
   text-align: right;
   padding: 0 10px;
-  > li {
-    a {
-      padding: 6px 0;
-      display: inline-block;
-      height: 100%;
+}
+.fbFooter--desktopColItem {
+  font-size: 1.1rem;
+  a {
+    padding: 6px 0;
+    display: inline-block;
+    height: 100%;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -78,10 +86,11 @@
   width: 5.5rem;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+.fbFooter--desktopColSocialIcon {
   font-size: 1.4rem;
-  margin-top: 0.5rem;
-
-  a:hover {
+  &:hover {
     text-decoration: none;
   }
 }

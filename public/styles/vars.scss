@@ -1,3 +1,4 @@
+$oxley: #739d73;
 $mountainMeadow: #33bb77;
 $elfGreen: #28935e;
 $lochinvar: #339977;
@@ -5,8 +6,11 @@ $deepFir: #003300;
 
 $yellow: #f2b90c;
 
+$outrageousOrange: #F96F48; // rgb(242, 114, 66);
+
 $zircon: #e1e1e1;
-$steel: #666666;
+$steel: #666666; // rgb(102, 102, 102)
+$aluminum: #999999;
 
 $bodyTextColor: $deepFir;
 $linkHoverTextColor: $mountainMeadow;
@@ -16,3 +20,8 @@ $footerLinkColor: $steel;
 
 $primaryFont: 'iranYekanWeb', sans-serif;
 $secondaryFont: 'Reem Kufi', 'iranYekanWeb', 'sans-serif';
+
+$desktopMaxWidth: 1200px;
+$tabletBreakPoint: 992px;
+$phoneBreakPoint: 768px;
+$miniPhoneBreakPoint: 320px;

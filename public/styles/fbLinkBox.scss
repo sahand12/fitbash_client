@@ -1,3 +1,21 @@
+@import "vars";
+.fbLinkBtn {
+  color: inherit;
+  font: inherit;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+.fbLinkBtn-default {
+  padding: 1.2rem 4.4rem;
+  background-color: $mountainMeadow;
+  &:hover {
+    background-color: darken($mountainMeadow, 8%);
+  }
+  &:active {
+    background-color: $yellow;
+  }
+}
 .fbLinkBox {
   color: inherit;
   font: inherit;
@@ -6,4 +24,17 @@
 }
 .fbLinkBox-square {
   padding: 12px 12px;
+}
+.fbLinkBox-mountainMeadow {
+  color: $mountainMeadow;
+  &:hover {
+    color: darken($mountainMeadow, 8%);
+  }
+}
+.fbLinkBox-aluminum {
+  color: $aluminum;
+  &:hover {
+    color: darken($aluminum, 18%);
+    text-decoration: underline;
+  }
 }

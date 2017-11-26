@@ -1,0 +1,53 @@
+@import "vars";
+.fbTrain {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.fbTrain--windowWrapper {
+  flex-basis: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.fbTrain--window {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.fbTrain--navigationWrapper {
+  display: flex;
+  align-items: center;
+}
+.fbTrain--navigation {
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 6.6rem;
+  padding: 2rem 0.4rem;
+  span {
+    font-size: 2.5rem;
+    color: darken($zircon, 8%);
+  }
+
+  &:hover {
+    span {
+      color: $mountainMeadow;
+      text-shadow: none;
+    }
+  }
+}
+.fbTrain--wagon {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: $phoneBreakPoint){
+  .fbTrain--wagon {
+    flex-basis: 33.33333%;
+  }
+}
+
+@media only screen and (min-width: $tabletBreakPoint){
+  .fbTrain--wagon {
+    flex-basis: 25%;
+  }
+}

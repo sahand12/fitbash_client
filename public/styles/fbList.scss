@@ -1,0 +1,14 @@
+@import "vars";
+.fbList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fbList--item {}
+
+@media only screen and (min-width: $phoneBreakPoint) {
+  .fbList {
+    flex-direction: row;
+  }
+}
+

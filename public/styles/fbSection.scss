@@ -1,0 +1,28 @@
+@import "vars";
+.fbSection {
+}
+.fbSection--outer {
+  border-top: 1px solid $zircon;
+}
+.fbSection--inner {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+.fbSection--heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: $desktopMaxWidth) {
+  .fbSection--inner {
+    max-width: $desktopMaxWidth;
+  }
+}

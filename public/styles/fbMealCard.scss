@@ -1,0 +1,36 @@
+@import "vars";
+.fbMealCard {
+  position: relative;
+  padding: 0.8rem;
+  min-height: 1px;
+  text-align: center;
+  a {
+    &:hover {
+      .fbMealCard--name {
+        color: $mountainMeadow;
+        transition: color 0.2s;
+      }
+    }
+  }
+}
+.fbMealCard--img {
+  background: no-repeat center center;
+  background-size: cover;
+  margin-bottom: 0.4rem;
+  box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, 0.15);
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+.fbMealCard--name {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.fbMealCard--description {
+  font-size: 1.1rem;
+  color: $oxley;
+}
+.fbMealCard--tag {}

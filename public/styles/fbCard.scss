@@ -1,0 +1,28 @@
+@import "vars";
+.fbCard {
+  text-align: center;
+  margin: 0 auto;
+}
+.fbCard--header {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.fbCard--heading {
+  margin: 1.5rem 0;
+  font-size: 1.7rem;
+}
+.fbCard--main {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+.fbCard--mid {
+  width: 22rem;
+}
+
+@media only screen and (min-width: $phoneBreakPoint) {
+  .fbCard {
+    margin-bottom: 0;
+  }
+}

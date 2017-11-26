@@ -51,14 +51,13 @@
   overflow-y: hidden;
   max-height: 270px;
 
-  transition-property: all;
-  transition-duration: 0.4s;
+  transition-property: max-height;
+  transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0, 0.8, 0.5, 1);
 }
 .fbSlider-is-closed {
   max-height: 1px;
 }
-
 
 @media only screen and (min-width: 768px) {
   .fbNav--bars {

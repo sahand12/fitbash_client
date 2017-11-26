@@ -1,0 +1,86 @@
+@import "vars";
+.FBHowItWorksSection {
+  .fbList {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .fbList--item:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+}
+.FBOurChefs {
+  color: white;
+  text-align: center;
+
+  .FBOurChefs--item {
+    width: 100px;
+    margin: 1.5rem auto;
+    p {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      margin-top: 1rem;
+    }
+  }
+  .fbList {
+    margin-bottom: 2rem;
+  }
+  .fbList--item {
+    flex-basis: 45%;
+  }
+  .fbLinkBtn {
+    font-size: 1.4rem;
+    padding: 1.2rem 4.4rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+}
+.FBJoinNewsLetter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  .fbBox--p {
+    color: black;
+    margin-bottom: 2rem;
+  }
+  button {
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
+  p:last-of-type {
+    color: black;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    max-width: 35rem;
+  }
+}
+.FBSectionMenuShowCase {
+  .fbSection--heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: $phoneBreakPoint) {
+  .FBOurChefs {
+    .fbList {
+      width: 60rem;
+      margin: 3rem auto;
+    }
+    .fbList--item {
+      flex-basis: 20%;
+    }
+  }
+  .FBHowItWorksSection {
+    .fbList {
+      flex-direction: row;
+    }
+    .fbList--item:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+  .FBSectionMenuShowCase {
+    .fbSection--heading {
+      font-size: 2.5rem;
+    }
+  }
+}

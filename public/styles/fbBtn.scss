@@ -13,11 +13,9 @@
 .fbBtn-primary {
   color: white;
   background-color: $primaryBtnBgColor;
-
   &:hover {
     background-color: darken($primaryBtnBgColor, 8%);
   }
-
   &:active {
     background-color: $yellow;
   }
@@ -36,4 +34,12 @@
   width: 30px;
   height: 30px;
   font-size: 30px;
+}
+.fbBtn-stretch {
+  width: calc(100% - 24px);
+}
+.fbBtn-stretch-l {
+  width: calc(100% - 24px);
+  height: 30px;
+  line-height: 30px;
 }
