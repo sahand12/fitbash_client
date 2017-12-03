@@ -1,0 +1,12 @@
+@import "vars";
+.fbLink {
+  font-size: inherit;
+  font-weight: inherit;
+  color: $deepFir;
+  transition: color 0.05s;
+
+  &:hover {
+    color: $mountainMeadow;
+    transition: color 0.1s;
+  }
+}

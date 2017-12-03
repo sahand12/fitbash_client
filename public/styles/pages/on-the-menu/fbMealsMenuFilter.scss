@@ -2,4 +2,36 @@
 .fbMealsMenuFilter {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.fbMealsMenuFilter--mealTypes {
+  display: flex;
+  justify-content: flex-start;
+}
+.fbMealsMenuFilter--mealType {
+  font-size: 1.5rem;
+  a {
+    display: block;
+    padding: 1.2rem 0;
+  }
+}
+.fbMealsMenuFilter--mealType + .fbMealsMenuFilter--mealType {
+  margin-right: 1.5rem;
+}
+.fbMealsMenuFilter--filterLink {
+  font-weight: 400;
+  font-size: 1.3rem;
+  button {
+    color: $mountainMeadow;
+    &:hover {
+      color: darken($mountainMeadow, 10%);
+    }
+    &:active {
+      font-weight: 900;
+    }
+    span {
+      padding-right: 0.5rem;
+    }
+  }
 }
