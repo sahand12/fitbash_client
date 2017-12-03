@@ -108,6 +108,9 @@ export const FA = {
       heading: 'غذایتان را از منو هفتگی ما انتخاب کنید'
     }
   },
+  menuPage: {
+    headerTitle: 'خانه شما در یک آن کلی خوشمزه‌تر شد.',
+  },
   buttons: {
     joinNewsLetter: 'ثبت‌نام در خبرنامه',
   },
