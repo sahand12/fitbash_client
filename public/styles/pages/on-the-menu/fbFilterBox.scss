@@ -1,0 +1,76 @@
+@import "../../vars";
+.fbFilterBox {
+  color: $stardust;
+  text-align: center;
+  padding: 0 2rem;
+}
+.fbFilterBox--header {
+  font-size: 1.5rem;
+  padding: 0 0 2.5rem 0;
+  margin-top: -2rem;
+}
+.fbFilterBox--main {}
+.fbFilterBox--footer {
+  padding: 2.5rem 0;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+.fbFilterBox--boxesContainer {}
+.fbDimmer {
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.fbFilterBox--boxItem {
+  font-size: 1.4rem;
+  font-weight: 100;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  position: relative;
+}
+.fbFilterBox--boxText {
+  user-select: none;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  display: block;
+  border: 2px solid $stardust;
+
+  &:hover {
+    background-color: darken(white,3%);
+  }
+}
+.fbFilterBox--boxText-selected {
+  color: $ferrariRed;
+  border-color: $ferrariRed;
+  background-color: rgba(255, 51, 0, 0.08);
+
+  &:hover {
+    background-color: rgba(255, 51, 0, 0.15);
+  }
+}
+.fbFilterBox--boxIcon {
+  font-size: 1.5rem;
+  color: $ferrariRed;
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  right: 1.8rem;
+}
+.fbRow-5-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fbRow-5-2--col {
+  flex: 0 0 50%;
+}
+
+@media only screen and (min-width: $phoneBreakPoint) {
+  .fbRow-5-2--col {
+    flex: 0 0 20%;
+  }
+}

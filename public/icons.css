@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lgktg');
-  src:  url('fonts/icomoon.eot?lgktg#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lgktg') format('truetype'),
-    url('fonts/icomoon.woff?lgktg') format('woff'),
-    url('fonts/icomoon.svg?lgktg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bia171');
+  src:  url('fonts/icomoon.eot?bia171#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bia171') format('truetype'),
+    url('fonts/icomoon.woff?bia171') format('woff'),
+    url('fonts/icomoon.svg?bia171#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,17 +24,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-left:before {
-  content: "\e902";
-}
-.icon-right:before {
-  content: "\e903";
-}
-.icon-telegram:before {
+.icon-blocked:before {
   content: "\e900";
 }
-.icon-bars:before {
+.icon-telegram:before {
   content: "\e901";
+}
+.icon-bars:before {
+  content: "\e902";
+}
+.icon-left:before {
+  content: "\e903";
+}
+.icon-right:before {
+  content: "\e904";
 }
 .icon-facebook:before {
   content: "\ea90";

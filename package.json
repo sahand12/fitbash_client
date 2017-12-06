@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "axios": "^0.17.0",
+    "lodash.pick": "^4.4.0",
     "node-polyglot": "^2.2.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
