@@ -85,6 +85,7 @@ export const FA = {
     turkey: 'بوقلمون',
     vegetarian: 'گیاه خواری',
     viewThisWeeksFullMenu: 'مشاهده منو کامل این هفته',
+    with: 'همراه با',
     whyFitBash: 'چرا فِرِش‌باشی؟',
   },
   home: {

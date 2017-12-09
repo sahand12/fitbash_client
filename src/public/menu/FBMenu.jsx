@@ -1,11 +1,13 @@
 // @flow
 import React, {Component} from 'react';
+
 import type {Allergen, FoodGroup, Meal} from '../../models';
-
-import FBMenuFilter from './FBMenuFilter';
-import FBMenuSection from './FBMenuSection';
-import FBMenuCart from './FBMenuCart';
-
+import meals from '../../mock-data/meals';
+import mealPrices from '../../mock-data/mealPrices';
+// import FBMenuFilter from './FBMenuFilter';
+// import FBMenuSection from './FBMenuSection';
+// import FBMenuCart from './FBMenuCart';
+import FBMealCard from './FBMealCard';
 
 type Props = {
   allergens: Array<Allergen>,
@@ -22,10 +24,22 @@ type State = {
 };
 
 class FBMenu extends Component<Props, State> {
-  
-  render() {
-    return ();
+  componentWillMount() {
+    console.log(this.props.meals);
   }
+
+  render() {
+    return (
+      <FBMealCard 
+        isCompact={true}
+        meal={meals[0]}
+        mealPrice={mealPrices[0]}
+      />
+    );
+  }
+}
+FBMenu.defaultProps = {
+  meals,
 }
 
 export default FBMenu;

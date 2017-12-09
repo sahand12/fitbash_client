@@ -20,23 +20,12 @@ type Props = {
   onClose: Function,
 };
 function FBMealCard (props: Props) {
-  const {
-    isOrderable,
-    meal,
-    mealPrice,
-    count,
-    minOrder,
-    maxOrder,
-    onIncrement,
-    onDecrement,
-    onClick,
-  } = props
   return (props.isCompact
     ? <FBMealCardCompact 
-        {...pick(props, ['meal', 'mealPrice', 'count', 'minOrder','isOrderable', 'maxOrder', 'onIncrement', 'onDecrement', 'onClose'])}
+        {...pick(props, ['meal', 'mealPrice', 'count', 'minOrder', 'maxOrder', 'onIncrement', 'onDecrement', 'onClose'])}
       />
     : <FBMealCardRegular
-        {...pick(props, ['meal', 'mealPrice', 'count', 'minOrder', 'maxOrder', 'onIncrement', 'onDecrement', 'onClick'])}
+        {...pick(props, ['isOrderable', 'meal', 'mealPrice', 'count', 'minOrder', 'maxOrder', 'onIncrement', 'onDecrement', 'onClick'])}
       />
   );
 }
@@ -49,7 +38,8 @@ FBMealCard.defaultProps = {
   maxOrder: 100,
   onIncrement() {},
   onDecrement() {},
-  onClick() {}
+  onClick() {},
+  onClose() {}
 };
 
 export default FBMealCard;

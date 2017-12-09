@@ -1,7 +1,8 @@
 // @flow
-import React from 'react';
+import React, {Component} from 'react';
 
 import type {Meal, MealPrice} from '../../models';
+import t from '../../i18n';
 
 type Props = {
   meal: Meal,
@@ -13,38 +14,50 @@ type Props = {
   onDecrement: Function,
   onClose: Function,
 }
-function FBMealCardCompact(props: Props) {
-  
-  return (
-    <div className='fbMealCardCompact'>
-      <div className='fbMealCardCompact--counter'>
-        <button 
-          className='fbMealCardCompact--counter--plus' 
-          onClick={props.onIncrement}
-        >
-          <span>+</span>
-        </button>
-        <span className='fbMealCardCompact--counter--text'>{props.count}</span>
-        <button 
-          className='fbMealCardCompact--counter--minus'
-          onClick={props.onDecrement}
-        >
-          <span>-</span>
-        </button>
+class FBMealCardCompact extends Component<Props> {
+  constructor(props: Props) {
+    super(props);
+  }
+
+  render() {
+    const {onIncrement, count, onDecrement, meal, onClose,} = this.props;
+    return (
+      <div className='fbMealCardCompact'>
+        <div className='fbMealCardCompact--counter'>
+          <button 
+            className='fbMealCardCompact--counter--plus' 
+            onClick={onIncrement}
+          >
+            <span>+</span>
+          </button>
+          <span className='fbMealCardCompact--counter--text'>{count}</span>
+          <button 
+            className='fbMealCardCompact--counter--minus'
+            onClick={onDecrement}
+          >
+            <span>-</span>
+          </button>
+        </div>
+        <div className='fbMealCardCompact--image'>
+          <img src={meal.mealImageUrls.thumb} />
+        </div>
+        <div className='fbMealCardCompact--main'>
+          <p className='fbMealCardCompact--main--name'>
+            {meal.t.fa.name}
+          </p>
+          <p className='fbMealCardCompact--main--subName'>
+            {`${t('common.with')} ${meal.t.fa.sideDishName}`}
+          </p>
+        </div>
+        <div className='fbMealCardCompact--close'>
+          <button 
+            className='fbMealCarCompat--close--btn'
+            onClick={onClose}
+          >X</button>
+        </div>
       </div>
-      <div className='fbMealCardCompact--image'></div>
-      <div className='fbMealCardCompact--main'>
-        <span className='fbMealCardCompact--main--name'>{props.meal.name}</span>
-        <span className='fbMealCardCompact--main--subName'>{props.meal.sideDishName}</span>
-      </div>
-      <div className='fbMealCardCompact--close'>
-        <button 
-          className='fbMealCarCompat--close--btn'
-          onClick={props.onClose}
-        >X</button>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default FBMealCardCompact;

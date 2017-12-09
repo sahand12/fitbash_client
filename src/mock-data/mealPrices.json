@@ -1,0 +1,13 @@
+[
+  {
+    "id": "3213131",
+    "mealId": "696809",
+    "startDate": "2017-08-01",
+    "endDate": "2018-08-01",
+    "priceHash": {
+      "currency": "Toman",
+      "amount": 19999,
+      "precision": 0
+    }
+  }
+]

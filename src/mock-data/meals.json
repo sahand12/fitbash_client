@@ -1,0 +1,127 @@
+[
+  {
+    "id": 696809,
+    "type": "MealMain",
+    "name": "Chicken \u0026 Rice Pilaf",
+    "description": "Hearty and deliciously nutritious, we dress our juicy grilled chicken breast in savory herb gravy. It is served over a three-grain rice pilaf and accompanied with a side of crisp green beans and matchstick carrots, which are lightly seasoned in a garlicky oil.",
+    "slug": null,
+    "base_sku": "CHX_PLF",
+    "sku": "CHX_PLF(696809)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Cooked Brown Rice, Chicken Breast, Green Beans, Water, Cooked Wild Rice, Carrots, Red Rice, Onion, Chicken Stock (Chicken Stock, Roasted Chicken Stock, Mirepoix Stock (Carrot, Celery, Onion Stocks), Dried Chicken Stock, Salt, Gelatin, Water, White Wine), Expeller Pressed Canola Oil, Celery, Bell Peppers, Almonds, Garlic, Sea Salt, Chicken Fat, Rice Flour, Cassava Flour, Butter (Cream, Natural Flavoring), Spices, Baking Soda.",
+    "containedAllergens": ["Milk", "Tree Nuts (Almond)"],
+    "options": {},
+    "sideDishName": "Green Beans \u0026 Carrots",
+    "nutritionWithDailyValues": {
+      "serving_unit": {
+        "value": 1.0,
+        "value_label": "1"
+      },
+      "serving_size": {
+        "value": 383.0,
+        "value_label": "383"
+      },
+      "calories": {
+        "value": 480.0,
+        "value_label": "480"
+      },
+      "protein": {
+        "value": 44.0,
+        "value_label": "44"
+      },
+      "calories_from_fat": {
+        "value": 130.0,
+        "value_label": "130"
+      },
+      "total_fat": {
+        "value": 15.0,
+        "value_label": "15",
+        "fda_daily_percent": 23,
+        "fda_daily_percent_label": "23"
+      },
+      "saturated_fat": {
+        "value": 3.0,
+        "value_label": "3",
+        "fda_daily_percent": 15,
+        "fda_daily_percent_label": "15"
+      },
+      "trans_fat": {
+        "value": 0.0,
+        "value_label": "0"
+      },
+      "carbohydrates": {
+        "value": 42.0,
+        "value_label": "42",
+        "fda_daily_percent": 14,
+        "fda_daily_percent_label": "14"
+      },
+      "cholesterol": {
+        "value": 100.0,
+        "value_label": "100",
+        "fda_daily_percent": 33,
+        "fda_daily_percent_label": "33"
+      },
+      "sodium": {
+        "value": 790.0,
+        "value_label": "790",
+        "fda_daily_percent": 33,
+        "fda_daily_percent_label": "33"
+      },
+      "dietary_fiber": {
+        "value": 6.0,
+        "value_label": "6",
+        "fda_daily_percent": 24,
+        "fda_daily_percent_label": "24"
+      },
+      "sugars": {
+        "value": 6.0,
+        "value_label": "6"
+      },
+      "vitamin_a": {
+        "value": 160.0,
+        "value_label": "160"
+      },
+      "vitamin_c": {
+        "value": 30.0,
+        "value_label": "30"
+      },
+      "calcium": {
+        "value": 8.0,
+        "value_label": "8"
+      },
+      "iron": {
+        "value": 15.0,
+        "value_label": "15"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Chicken \u0026 Rice Pilaf with Green Beans \u0026 Carrots",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-e9216125-a810-4a0f-ab6a-1105f4a8e15e.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.21,
+    "t": {
+      "fa": {
+        "categories": ["غذای اصلی"],
+        "containedAllergens": ["لبنیات (شیر)", " آجیل ( بادام)"],
+        "description": "دلچسب و خوشمزه مُغَذّی، ما مرغ کباب‌شده آبدارمان را با آب مرغ و سبزیجات معطر تکمیل میکنیم. این غذا با برنج مخلوطی که شامل سه دانه روغنیست سرو می‌شود. همچنین در کنار آن لوبیا سبز تُرد و هویج قلمی که در روغن همراه با سیر تف داده‌شده قرار دارد.",
+        "displayName": "مرغ با برنج مخلوط همراه با لوبیا سبز و هویج",
+        "ingredients": "برنج قهوه‌ای پخته‌شده، سینه مرغ، لوبیا سبز، آب، برنج وحشی پخته‌شده، هویج، برنج قرمز، آب مرغ پخته‌شده (آب مرغ، آب مرغ بریان شده، سبزیجات پخته‌شده (هویج، کرفس، پیاز)، مرغ دودی، نمک، ژلاتین، نمک دریا، شراب سفید)، روغن کانولا فشرده‌شده، کرفس، فلفل دلمه‌ای، بادام، سیر، نمک دریا، چربی مرغ، آرد برنج، آرد کاساوا، کره (خامه، طعم‌دهنده‌های طبیعی)، ادویه‌جات، جوش شیرین",
+        "name": "مرغ با برنج مخلوط",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "لوبیا سبز و هویج",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  }
+]

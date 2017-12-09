@@ -1,0 +1,32 @@
+@import '../vars';
+.fbMealCardCompact {
+  display: flex;
+  max-width: 450px;
+  max-height: 90px;
+}
+
+.fbMealCardCompact--counter {
+  display: flex;
+  flex: 0 0 15%;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.fbMealCardCompact--counter--plus {}
+.fbMealCardCompact--counter--text {}
+.fbMealCardCompact--counter--minus {}
+
+.fbMealCardCompact--image {
+  flex: 0 1 20%;
+}
+
+.fbMealCardCompact--main {
+  flex: 0 1 55%;
+}
+.fbMealCardCompact--main--name {}
+.fbMealCardCompact--main--subName {}
+
+.fbMealCardCompact--close {
+  flex: 0 0 10%
+}
+.fbMealCardCompact--close--btn {}

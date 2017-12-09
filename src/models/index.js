@@ -1,24 +1,28 @@
 // @flow
+type NutritionValue = {
+  value: number,
+  valueLabel: string,
+};
+type NutritionValueWithFDA = {
+  value: number,
+  valueLabel: string,
+  fdaDailyPercent: number,
+  fdaDailyPercentLabel: string,
+};
 export type Meal = {
   id: string,
   type: string, // 'MealMain'
   name: string, // 'Penne Bolognese',
-  nameFA: string,
   description: string,
-  descriptionFA: string,
   slug: string,
-  slugFA: string,
   baseSku: string,
   sku: string,
   categories: Array<string>, // ['main'] or ['breakfast']
   ingredients: string,
-  ingredientsFA: string,
-  containedAllergens: string,
-  containedAllergensFA: string,
-  options: object, // {'cheese': true}
+  containedAllergens: Array<string>,
+  options: mixed, // {'cheese': true}
   sideDishName: string,
-  sideDishNameFA: string,
-  nutritionWithDailyValues?: {
+  nutritionWithDailyValues: {
     servingUnit: NutritionValue,
     servingSize: NutritionValue,
     calories: NutritionValue,
@@ -39,7 +43,6 @@ export type Meal = {
   },
   prettyOptionsLabel: string, // "w/ cheese"
   displayName: string,
-  displayNameFA: string,
   mealImageUrls: {
     large: string,
     medium: string,
@@ -50,6 +53,21 @@ export type Meal = {
     ios3x: string,
   },
   mainRatingRecentAverageNormalized: number,
+  t: {
+    fa: {
+      categories: Array<string>,
+      containedAllergens: Array<string>,
+      description: string,
+      displayName: string,
+      ingredients: string,
+      name: string,
+      options: mixed,
+      prettyOptionsLabel: string,
+      sideDishName: string,
+      slug: string,
+      type: string,
+    }
+  }
 };
 export type FoodGroup = {
   id: string,
@@ -91,22 +109,11 @@ export type Allergen = {
 export type MealPrice = {
   id: string,
   mealId: string,
-  startDate: number,
-  endDate?: number,
+  startDate: string,
+  endDate?: string,
   priceHash: {
     currency: string,
     amount: number,
     precision: number,
   }
-}
-
-type NutritionValue = {
-  value: number,
-  valueLabel: string,
-}
-type NutritionValueWithFDA = {
-  value: number,
-  valueLabel: string,
-  fdaDailyPercent: number,
-  fdaDailyPercentLabel: string,
 }
