@@ -1,32 +1,62 @@
 @import '../vars';
 .fbMealCardCompact {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.8rem 0;
   max-width: 450px;
   max-height: 90px;
 }
 
 .fbMealCardCompact--counter {
-  display: flex;
   flex: 0 0 15%;
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
+  font-size: 1.7rem;
 }
-.fbMealCardCompact--counter--plus {}
-.fbMealCardCompact--counter--text {}
-.fbMealCardCompact--counter--minus {}
+.fbMealCardCompact--counter--plus {
+  width: 100%;
+  margin: 0 auto;
+}
+.fbMealCardCompact--counter--text {
+  display: block;
+  padding: 0.8rem 0 0.3rem 0;
+}
+.fbMealCardCompact--counter--minus {
+  width: 100%;
+  margin: 0 auto;
+}
 
-.fbMealCardCompact--image {
+.fbMealCardCompact--imgWrapper {
   flex: 0 1 20%;
+  display: flex;
+  align-items: center;
+  img {
+    background-size: cover;
+    width: 100%;
+  }
 }
 
 .fbMealCardCompact--main {
+  padding: 0 2rem;
   flex: 0 1 55%;
 }
-.fbMealCardCompact--main--name {}
-.fbMealCardCompact--main--subName {}
+.fbMealCardCompact--main--name {
+  color: $deepFir;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.fbMealCardCompact--main--subName {
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: $oxley;
+}
 
 .fbMealCardCompact--close {
-  flex: 0 0 10%
+  flex: 0 0 10%;
+  font-size: 1.5rem;
 }
-.fbMealCardCompact--close--btn {}
+.fbMealCardCompact--close--btn {
+  width: 100%;
+  margin: 0 auto;
+}

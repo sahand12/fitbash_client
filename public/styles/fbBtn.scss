@@ -1,7 +1,9 @@
 @import "vars";
 .fbBtn {
-  display: inline-block;
-  padding: 6px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
   outline: none;
   border: none;
   font-size: inherit;
@@ -10,6 +12,7 @@
   cursor: pointer;
   border-radius: 2px;
   text-align: center;
+  vertical-align: middle;
 }
 .fbBtn-primary {
   color: white;
@@ -43,4 +46,18 @@
   width: calc(100% - 24px);
   height: 30px;
   line-height: 30px;
+}
+
+/* -------- color variations --------- */
+.fbBtn-gray {
+  color: $aluminum;
+  &:hover {
+    color: $steel;
+  }
+}
+.fbBtn-lightGreen {
+  color: $mountainMeadow;
+  &:hover {
+    color: $elfGreen;
+  }
 }

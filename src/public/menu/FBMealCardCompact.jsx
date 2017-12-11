@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 
 import type {Meal, MealPrice} from '../../models';
-import t from '../../i18n';
+import t, {tNum} from '../../i18n';
 
 type Props = {
   meal: Meal,
@@ -15,30 +15,26 @@ type Props = {
   onClose: Function,
 }
 class FBMealCardCompact extends Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   render() {
     const {onIncrement, count, onDecrement, meal, onClose,} = this.props;
     return (
       <div className='fbMealCardCompact'>
         <div className='fbMealCardCompact--counter'>
           <button 
-            className='fbMealCardCompact--counter--plus' 
+            className='fbMealCardCompact--counter--plus fbBtn fbBtn-lightGreen'
             onClick={onIncrement}
           >
-            <span>+</span>
+            <span className="icon-plus"/>
           </button>
-          <span className='fbMealCardCompact--counter--text'>{count}</span>
+          <span className='fbMealCardCompact--counter--text'>{tNum(count)}</span>
           <button 
-            className='fbMealCardCompact--counter--minus'
+            className='fbMealCardCompact--counter--minus fbBtn fbBtn-gray'
             onClick={onDecrement}
           >
-            <span>-</span>
+            <span className="icon-minus"/>
           </button>
         </div>
-        <div className='fbMealCardCompact--image'>
+        <div className='fbMealCardCompact--imgWrapper'>
           <img src={meal.mealImageUrls.thumb} />
         </div>
         <div className='fbMealCardCompact--main'>
@@ -51,9 +47,11 @@ class FBMealCardCompact extends Component<Props> {
         </div>
         <div className='fbMealCardCompact--close'>
           <button 
-            className='fbMealCarCompat--close--btn'
+            className='fbMealCardCompact--close--btn fbBtn fbBtn-gray'
             onClick={onClose}
-          >X</button>
+          >
+            <span className="icon-cross"/>
+          </button>
         </div>
       </div>
     );
