@@ -21,10 +21,26 @@ const enToFaNums = {
   '8': '۸',
   '9': '۹',
   '0': '۰',
-}
+};
 export const tNum = function translateNumber(n: number): string {
   return n.toString()
     .split('')
     .map(char => enToFaNums[char])
     .join('');
 };
+
+export const formatFANumbers = function formatNumber (number, separator = ',') {
+  const input = String(number).split('');
+  const len = input.length;
+  if (len < 4) {
+    return input.join('');
+  }
+  return input
+    .map((val, index) => {
+      if (index % 3 === len % 3 && index !== 0) {
+        return `${separator}${val}`;
+      }
+      return val;
+    })
+    .join('');
+}

@@ -2,8 +2,9 @@
 import React, {Component} from 'react';
 
 import type {Meal, MealPrice} from '../../models';
-import t, {tNum} from '../../i18n';
+import t, {tNum, formatFANumbers} from '../../i18n';
 
+// @TODO: fetch currency dynamically
 type Props = {
   meal: Meal,
   mealPrice: MealPrice,
@@ -15,20 +16,29 @@ type Props = {
   onClose: Function,
 }
 class FBMealCardCompact extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.calcPrice = this.calcPrice.bind(this);
+  }
+
+  calcPrice() {
+    return this.props.count * this.props.mealPrice.priceHash.amount;
+  }
+
   render() {
-    const {onIncrement, count, onDecrement, meal, onClose,} = this.props;
+    const {onIncrement, count, onDecrement, meal, onClose} = this.props;
     return (
       <div className='fbMealCardCompact'>
         <div className='fbMealCardCompact--counter'>
           <button 
-            className='fbMealCardCompact--counter--plus fbBtn fbBtn-lightGreen'
+            className='fbMealCardCompact--counter--btn fbBtn fbBtn-lightGreen'
             onClick={onIncrement}
           >
             <span className="icon-plus"/>
           </button>
           <span className='fbMealCardCompact--counter--text'>{tNum(count)}</span>
           <button 
-            className='fbMealCardCompact--counter--minus fbBtn fbBtn-gray'
+            className='fbMealCardCompact--counter--btn fbBtn fbBtn-gray'
             onClick={onDecrement}
           >
             <span className="icon-minus"/>
@@ -43,6 +53,9 @@ class FBMealCardCompact extends Component<Props> {
           </p>
           <p className='fbMealCardCompact--main--subName'>
             {`${t('common.with')} ${meal.t.fa.sideDishName}`}
+          </p>
+          <p className="fbMealCardCompact--main--price">
+            {formatFANumbers(tNum(this.calcPrice()), ',')} {t('common.toman')}
           </p>
         </div>
         <div className='fbMealCardCompact--close'>

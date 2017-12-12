@@ -1,8 +1,5 @@
 @import "vars";
 .fbBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: white;
   outline: none;
   border: none;
@@ -11,6 +8,7 @@
   font-weight: inherit;
   cursor: pointer;
   border-radius: 2px;
+  display: inline-block;
   text-align: center;
   vertical-align: middle;
 }

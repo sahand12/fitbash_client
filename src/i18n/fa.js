@@ -82,6 +82,7 @@ export const FA = {
     soy: 'سویا',
     termsOfUse: 'شرایط استفاده',
     treenuts: 'انواع آجیل',
+    toman: 'تومان',
     turkey: 'بوقلمون',
     vegetarian: 'گیاه خواری',
     viewThisWeeksFullMenu: 'مشاهده منو کامل این هفته',

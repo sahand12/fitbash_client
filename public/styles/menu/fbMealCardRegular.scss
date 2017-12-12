@@ -1,0 +1,50 @@
+@import '../vars';
+.fbMealCardRegular {
+  max-width: 360px;
+}
+
+.fbMealCardRegular--imgWrapper{
+  margin-bottom: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  img {
+    display: block;
+    width: 100%;
+    background-size:cover;
+  }
+}
+
+.fbMealCardRegular--counter{
+  font-size: 1.7rem;
+}
+.fbMealCardRegular--counter--btn {
+  font-size: 1.7rem;
+}
+.fbMealCardRegular--counter--count {
+  font-size: 1.7rem;
+}
+
+.fbMealCardRegular--price {
+  display: none;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.fbMealCardRegular--main {
+  text-align: center;
+  min-height: 100px;
+}
+.fbMealCardRegular--main--name {
+  font-size: 1.8rem;
+  color: $deepFir;
+}
+.fbMealCardRegular--main--subName {
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding: 4px 0;
+  color: $oxley;
+}
+.fbMealCardRegular--main--badges {
+  display: none;
+}
+

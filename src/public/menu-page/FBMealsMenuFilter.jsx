@@ -119,7 +119,7 @@ class FBFilterBox extends Component<FBFilterBoxProps> {
           <ul className='fbRow-5-2 fbFilterBox--boxesContainer'>
             {this.props.boxes.map(item => (
               <li 
-                key={item.id} 
+                key={item.id}
                 className='fbRow-5-2--col fbFilterBox--boxItem'
                 onClick={() => this.toggleSelected(item.id)}
               >

@@ -35,29 +35,25 @@ class FBMenu extends Component<Props, State> {
     return (
       <div>
         <FBMealCard
-          isCompact={true}
+          isOrderable={false}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
         />
         <FBMealCard
-          isCompact={true}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
           count={10}
         />
         <FBMealCard
-          isCompact={true}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
           count={9}
         />
         <FBMealCard
-          isCompact={true}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
         />
         <FBMealCard
-          isCompact={true}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
           count={800}
