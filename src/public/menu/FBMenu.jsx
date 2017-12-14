@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import type {Allergen, FoodGroup, Meal} from '../../models';
 import meals from '../../mock-data/meals';
 import mealPrices from '../../mock-data/mealPrices';
+import ribbons from '../../mock-data/ribbons.json';
 // import FBMenuFilter from './FBMenuFilter';
 // import FBMenuSection from './FBMenuSection';
 // import FBMenuCart from './FBMenuCart';
@@ -11,7 +12,7 @@ import FBMealCard from './FBMealCard';
 
 type Props = {
   allergens: Array<Allergen>,
-  canOrder: boolean,
+  isOrderable: boolean,
   foodGroups: Array<FoodGroup>,
   meals: Array<Meal>,
   orderRules?: {
@@ -35,25 +36,30 @@ class FBMenu extends Component<Props, State> {
     return (
       <div>
         <FBMealCard
-          isOrderable={false}
+          isCompact={true}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
         />
         <FBMealCard
+          isOrderable={true}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
           count={10}
+          ribbon={ribbons[1]}
         />
         <FBMealCard
           meal={meals[0]}
           mealPrice={mealPrices[0]}
           count={9}
+          ribbon={ribbons[2]}
         />
         <FBMealCard
           meal={meals[0]}
           mealPrice={mealPrices[0]}
+          ribbon={ribbons[1]}
         />
         <FBMealCard
+          ribbon={ribbons[0]}
           meal={meals[0]}
           mealPrice={mealPrices[0]}
           count={800}

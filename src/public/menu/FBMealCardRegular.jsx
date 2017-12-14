@@ -2,12 +2,14 @@
 import React from 'react';
 
 import t, {tNum, formatFANumbers} from "../../i18n/index";
-import type {Meal, MealPrice} from '../../models';
+import type {Meal, MealPrice, Ribbon} from '../../models';
 
+// @TODO: dynamic currency resolution
 type Props = {
   isOrderable: boolean,
   meal: Meal,
   mealPrice: MealPrice,
+  ribbon: Ribbon,
   count: number,
   minOrder: number,
   maxOrder: number,
@@ -16,37 +18,47 @@ type Props = {
   onClick: Function,
 }
 function FBMealCardRegular(props: Props) {
-  const {count, meal, mealPrice: {priceHash: {amount}}, onIncrement, onDecrement, onClick} = props;
+  const {count, meal, mealPrice: {priceHash: {amount}}, ribbon, onIncrement, onDecrement, onClick} = props;
   return (
     <div className='fbMealCardRegular'>
       <div className='fbMealCardRegular--imgWrapper'>
         <img src={meal.mealImageUrls.square} alt={meal.t.fa.name}/>
       </div>
-      <div className='fbMealCardRegular--price'>
-        {`${formatFANumbers(tNum(amount))} ${t('common.toman')}`}
-      </div>
-      {props.isOrderable && 
+      {props.isOrderable &&
         <div className='fbMealCardRegular--counter'>
           <button
-            className='fbMealCardRegular--counter--btn fbBtn fbBtn-lightGreen'
+            className='fbMealCardRegular--counter--plus fbBtn fbBtn-lightGreen'
             onClick={onIncrement}
           >
             <span className='icon-plus'/>
           </button>
-          <span className='fbMealCardRegular--counter--text'>{count}</span>
+          <span className='fbMealCardRegular--counter--count'>
+            {tNum(count)}
+          </span>
           <button 
-            className='fbMealCardRegular--counter--btn fbBtn fbBtn-gray'
+            className='fbMealCardRegular--counter--minus fbBtn fbBtn-gray'
             onClick={props.onDecrement}
           >
             <span className='icon-minus'/>
           </button>
         </div>
       }
+      <div className='fbMealCardRegular--price'>
+        {`${formatFANumbers(tNum(amount))} ${t('common.toman')}`}
+      </div>
       <div className='fbMealCardRegular--main'>
-        <p className='fbMealCardRegular--main--name'>{meal.t.fa.name}</p>
-        <p className='fbMealCardRegular--main--subName'>{meal.t.fa.sideDishName}</p>
+        <p className='fbMealCardRegular--main--name' title={meal.t.fa.name}>{meal.t.fa.name}</p>
+        <p className='fbMealCardRegular--main--subName' title={meal.t.fa.sideDishName}>
+          {`${t('common.with')} ${meal.t.fa.sideDishName}`}
+        </p>
         <ul className='fbMealCardRegular--main--badges'></ul>
       </div>
+      {
+        ribbon &&
+        <div className="fbMealCardRegular--ribbonWrapper">
+          <div className="fbMealCardRegular--ribbon">{ribbon.t.fa.label}</div>
+        </div>
+      }
     </div>
   );
 }

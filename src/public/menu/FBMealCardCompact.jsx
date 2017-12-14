@@ -16,7 +16,8 @@ type Props = {
   onClose: Function,
 }
 class FBMealCardCompact extends Component<Props> {
-  constructor(props) {
+  calcPrice: () => number;
+  constructor(props: Props) {
     super(props);
     this.calcPrice = this.calcPrice.bind(this);
   }

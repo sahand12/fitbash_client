@@ -75,6 +75,11 @@ export type FoodGroup = {
   iconUrls: {
     gray: string,
     red: string,
+  },
+  t: {
+    fa: {
+      name: string,
+    }
   }
 };
 export type MealFoodGroup = {
@@ -88,23 +93,34 @@ export type MealBadge = {
   badgeId: string,
   sortOrder: number,
 };
-export type DietBadge = {
+
+export type Badge = {
   id: string,
   label: string,
-  type: string,
-};
-export type FeatureBadge = {
-  id: string,
-  label: string,
-  type: string,
+  type: string, // 'diet badge', 'feature badge'
+  t: {
+    fa: {
+      label: string
+    }
+  }
 };
 export type Ribbon = {
   id: string,
   label: string,
+  t: {
+    fa: {
+      label: string,
+    }
+  }
 };
 export type Allergen = {
   name: string,
   id: string,
+  t: {
+    fa: {
+      name: string,
+    }
+  }
 };
 export type MealPrice = {
   id: string,

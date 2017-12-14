@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "name": "Dairy",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_dairy_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_dairy_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "لبنیات"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Eggs",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_eggs_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_eggs_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "تخم مرغ"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Shrimps",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_pork_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_pork_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "میگو"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Tree Nuts",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_tree_nuts_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_tree_nuts_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "آجیل درختی"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chicken",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_chicken_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_chicken_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "مرغ"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "Beef",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_beef_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_beef_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "گوشت گاو"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "Turkey",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_turkey_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_turkey_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "بوقلمون"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "Fish",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_fish_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_fish_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "ماهی"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "Soy",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_soy_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_soy_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "سویا"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "Shellfish",
+    "icon_urls": {
+      "icon_gray_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_shellfish_gray_3x.png",
+      "icon_red_url": "https://res.cloudinary.com/freshly/image/upload/food_group_icon_shellfish_red_3x.png"
+    },
+    "t": {
+      "fa": {
+        "name": "صدف"
+      }
+    }
+  }
+]

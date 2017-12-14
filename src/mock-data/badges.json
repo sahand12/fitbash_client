@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "label": "Low Carb",
+    "type": "DietBadge",
+    "t": {
+      "fa": {
+        "label": "کم کربوهیدرات"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "label": "Paleo",
+    "type": "DietBadge",
+    "t": {
+      "fa": {
+        "label": "پالئو"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "label": "Vegetarian",
+    "type": "DietBadge",
+    "t": {
+      "fa": {
+        "label": "گیاهخواری"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "label": "Low Cal",
+    "type": "DietBadge",
+    "t": {
+      "fa": {
+        "label": "کم کالری"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "label": "Dairy Free",
+    "type": "FeatureBadge",
+    "t": {
+      "fa": {
+        "label": "فاقد لبنیات"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "label": "High Protein",
+    "type": "FeatureBadge",
+    "t": {
+      "fa": {
+        "label": "پروتیئن بالا"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "label": "Lower Sodium",
+    "type": "FeatureBadge",
+    "t": {
+      "fa": {
+        "label": "کم سدیم"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "label": "Soy Free",
+    "type": "FeatureBadge",
+    "t": {
+      "fa": {
+        "label": "فاقد سویا"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "label": "Spicy",
+    "type": "FeatureBadge",
+    "t": {
+      "fa": {
+        "label": "اسپایسی"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "label": "Gluten Free",
+    "type": "FeatureBadge",
+    "t": {
+      "fa": {
+        "label": "فاقد گلوتن"
+      }
+    }
+  }
+]
