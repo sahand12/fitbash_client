@@ -1,8 +1,8 @@
 // @flow
 import React, {Component} from 'react';
 
-import type {Meal, MealPrice} from '../../models';
-import t, {tNum, formatFANumbers} from '../../i18n';
+import type {Meal, MealPrice} from '../../../models';
+import t, {tNum, formatFANumbers} from '../../../i18n';
 
 // @TODO: fetch currency dynamically
 type Props = {

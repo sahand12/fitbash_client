@@ -69,6 +69,15 @@ export type Meal = {
     }
   }
 };
+export type MealType = {
+  id: string,
+  name: string,
+  t: {
+    fa: {
+      name: string,
+    }
+  }
+}
 export type FoodGroup = {
   id: string,
   name: string,

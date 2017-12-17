@@ -1,14 +1,19 @@
 // @flow
 import React, {Component} from 'react';
 
+import t from '../../i18n';
 import type {Allergen, FoodGroup, Meal} from '../../models';
 import meals from '../../mock-data/meals';
+import foodGroups from '../../mock-data/foodGroups.json';
+import mealTypes from '../../mock-data/mealTypes.json';
 import mealPrices from '../../mock-data/mealPrices';
 import ribbons from '../../mock-data/ribbons.json';
-// import FBMenuFilter from './FBMenuFilter';
-// import FBMenuSection from './FBMenuSection';
+import FBSection from '../../components/FBSection';
+import FBMenuFilter from './FBMenuFilter';
+import FBMenuSection from './FBMenuSection';
+import FBMenuNav from './FBMenuNav';
 // import FBMenuCart from './FBMenuCart';
-import FBMealCard from './FBMealCard';
+import FBMealCard from './mealCard';
 
 type Props = {
   allergens: Array<Allergen>,
@@ -20,51 +25,65 @@ type Props = {
   }
 };
 type State = {
-  selectedMeals: Array<{id: string, count: number}>,
-  selectedAllergens: Array<{id: string}>,
+  selectedMeals: Array<{meal: Meal, count: number}>,
+  selectedFilters: Array<string>,
+  filterListVisible: boolean,
 };
 
 class FBMenu extends Component<Props, State> {
+  onFilterSelection: Function;
+  toggleFilterListVisibility: Function;
   static defaultProps = {
     meals,
   };
-  componentWillMount() {
-    console.log(this.props.meals);
+  state = {
+    selectedFilters: [],
+    selectedMeals: [],
+    filterListVisible: false,
+  };
+  constructor(props: Props) {
+    super(props);
+    
+    this.onFilterSelection = this.onFilterSelection.bind(this);
+    this.toggleFilterListVisibility = this.toggleFilterListVisibility.bind(this);
+  }
+  onFilterSelection(id: string) {
+    if (this.state.selectedFilters.includes(id)) {
+      this.setState(prevState => ({
+        selectedFilters: prevState.selectedFilters.filter(item => item !== id),
+      }));
+    }
+    else {
+      this.setState(prevState => ({
+        selectedFilters: [...prevState.selectedFilters, id],
+      }));
+    }
+  }
+  toggleFilterListVisibility() {
+    this.setState(prevState => ({
+      filterListVisible: !prevState.filterListVisible,
+    }));
   }
 
   render() {
     return (
-      <div>
-        <FBMealCard
-          isCompact={true}
-          meal={meals[0]}
-          mealPrice={mealPrices[0]}
-        />
-        <FBMealCard
-          isOrderable={true}
-          meal={meals[0]}
-          mealPrice={mealPrices[0]}
-          count={10}
-          ribbon={ribbons[1]}
-        />
-        <FBMealCard
-          meal={meals[0]}
-          mealPrice={mealPrices[0]}
-          count={9}
-          ribbon={ribbons[2]}
-        />
-        <FBMealCard
-          meal={meals[0]}
-          mealPrice={mealPrices[0]}
-          ribbon={ribbons[1]}
-        />
-        <FBMealCard
-          ribbon={ribbons[0]}
-          meal={meals[0]}
-          mealPrice={mealPrices[0]}
-          count={800}
-        />
-      </div>
+      <FBSection>
+        <section className="fbMenu">
+          <FBMenuNav
+            mealTypes={mealTypes}
+            filterListVisible={this.state.filterListVisible}
+            selectedFiltersCount={this.state.selectedFilters.length}
+            onFilterLinkClick={this.toggleFilterListVisibility}
+          />
+          {this.state.filterListVisible &&
+            <FBMenuFilter
+              groups={foodGroups}
+              selectedFilters={[]}
+              onFilterSelection={this.onFilterSelection}
+            />
+          }
+        </section>
+      </FBSection>
     );
   }
 }

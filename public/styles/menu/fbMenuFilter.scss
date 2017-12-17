@@ -1,0 +1,29 @@
+@import "../vars";
+.fbMenuFilter {
+  position: relative;
+}
+
+.fbMenuFilter--link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.4rem;
+  font-weight: 100;
+  padding: 1.2rem 0;
+}
+.fbMenuFilter--link--btn {
+  color: $mountainMeadow;
+  &:hover {
+    color: darken($mountainMeadow, 10%);
+  }
+  &:active {
+    font-weight: 400;
+  }
+
+  span {
+    padding-right: 0.5rem;
+  }
+}
+.fbMenuFilter--link--btn--isFiltering {
+  color: $ferrariRed !important;
+}

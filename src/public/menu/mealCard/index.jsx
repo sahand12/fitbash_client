@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import pick from 'lodash.pick';
 
-import type {Meal, MealPrice, Ribbon} from '../../models';
+import type {Meal, MealPrice, Ribbon} from '../../../models';
 import FBMealCardRegular from './FBMealCardRegular';
 import FBMealCardCompact from './FBMealCardCompact';
 

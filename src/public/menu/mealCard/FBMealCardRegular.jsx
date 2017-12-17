@@ -1,8 +1,10 @@
 // @flow
 import React from 'react';
 
-import t, {tNum, formatFANumbers} from "../../i18n/index";
-import type {Meal, MealPrice, Ribbon} from '../../models';
+// @TODO: make currency & translation dynamic
+
+import t, {tNum, formatFANumbers} from "../../../i18n/index";
+import type {Meal, MealPrice, Ribbon} from '../../../models';
 
 // @TODO: dynamic currency resolution
 type Props = {
@@ -53,8 +55,7 @@ function FBMealCardRegular(props: Props) {
         </p>
         <ul className='fbMealCardRegular--main--badges'></ul>
       </div>
-      {
-        ribbon &&
+      {ribbon &&
         <div className="fbMealCardRegular--ribbonWrapper">
           <div className="fbMealCardRegular--ribbon">{ribbon.t.fa.label}</div>
         </div>

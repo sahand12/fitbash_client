@@ -1,0 +1,36 @@
+@import "../vars";
+.fbMenuSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px
+}
+.fbMenuSection--heading {
+  font-family: 'cairo', 'noto kufi arabic', 'droid arabic kufi', 'din next arabic', 'cairo', 'b hamid', 'arabic typesetting', serif;
+  font-size: 2.1rem;
+  margin: 10px 0 14px 0;
+}
+.fbMenuSection--body {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .fbMealCardRegular {
+    flex-basis: 48%;
+    margin-left: 2%;
+  }
+}
+
+@media only screen and (min-width: $phoneBreakPoint) {
+  .fbMenuSection--body {
+    .fbMealCardRegular {
+      flex-basis: 31.3333%;
+    }
+  }
+}
+@media only screen and (min-width: $tabletBreakPoint) {
+  .fbMenuSection--body {
+    .fbMealCardRegular {
+      flex-basis: 23%;
+    }
+  }
+}
