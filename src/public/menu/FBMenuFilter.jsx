@@ -15,15 +15,13 @@ type Props = {
 const FBMenuFilter = function FBMenuFilter(props: Props) {
   return (
     <section className='fbMenuFilter'>
-      <div className='fbMenuFilter--filterBox'>
-        <FBMenuFilterBox
-          heading={t('menu.filterBox.heading')}
-          footer={t('menu.filterBox.footer')}
-          boxes={props.groups}
-          selectedFilters={props.selectedFilters}
-          onSelection={props.onFilterSelection}
-        />
-      </div>
+      <FBMenuFilterBox
+        heading={t('menu.filterBox.heading')}
+        footer={t('menu.filterBox.footer')}
+        boxes={props.groups}
+        selectedFilters={props.selectedFilters}
+        onSelection={props.onFilterSelection}
+      />
     </section>
   );
 };
@@ -37,35 +35,38 @@ type FBMenuFilterBoxProps = {
   classNames: string,
 };
 const FBMenuFilterBox = function FBMenuFilterBox(props: FBMenuFilterBoxProps) {
+  console.log('fbMenuFilterBox', props);
   return (
-    <section className='fbMenuFilterBox'>
-      <h3 className='fbMenuFilterBox--heading'>
+    <section className='fbMenuFilter--box'>
+      <h3 className='fbMenuFilter--box--heading'>
         {props.heading}
       </h3>
-      <main className='fbMenuFilterBox--main'>
-        <ul className="fbRow-5-2 fbMenuFilterBox--boxesContainer">
+      <main className='fbMenuFilter--box--listWrapper'>
+        <ul className="fbRow-5-2 fbMenuFilter--box--list">
           {props.boxes.map(item => (
             <li
               key={item.id}
               data-boxid={item.id}
-              className="fbRow-5-2--col fbMenuFilterBox--box"
-              onClick={props.onSelection}
+              className={`fbRow-5-2--col fbMenuFilter--box--listItem ${props.selectedFilters.includes(item.id) ? 'fbMenuFilter--box--listItem-isSelected' : ''}`}
+              onClick={() => props.onSelection(item.id)}
             >
-              {props.selectedFilters.includes(item.id) &&
-                <span className='fbMenuFilterBox--icon'>
-                  <span className="icon-blocked"/>
+              <Link href='#' to='#'>
+                {props.selectedFilters.includes(item.id) &&
+                  <span className='fbMenuFilter--box--listItemIcon'>
+                    <span className="icon-blocked"/>
+                  </span>
+                }
+                <span className="fbMenuFilter--box--listItemText">
+                  {item.t[locale].name}
                 </span>
-              }
-              <span
-                className={`fbMenuFilterBox--text${props.selectedFilters.includes(item.id) ? ' fbMenuFilterBox--box-selected' : ''}`}
-              >
-                {item.t[locale].name}
-              </span>
+              </Link>
             </li>
           ))}
         </ul>
       </main>
-      <footer className='fbMenuFilterBox--footer'>{props.footer}</footer>
+      <footer className='fbMenuFilter--box--footer'>
+        {props.footer}
+      </footer>
     </section>
   );
 };

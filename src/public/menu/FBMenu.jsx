@@ -14,6 +14,7 @@ import FBMenuSection from './FBMenuSection';
 import FBMenuNav from './FBMenuNav';
 // import FBMenuCart from './FBMenuCart';
 import FBMealCard from './mealCard';
+import {colors} from "../../styles";
 
 type Props = {
   allergens: Array<Allergen>,
@@ -67,23 +68,23 @@ class FBMenu extends Component<Props, State> {
 
   render() {
     return (
-      <FBSection>
-        <section className="fbMenu">
+      <section className="fbMenu">
+        <FBSection outerStyle={{borderBottom: `1px solid ${colors.zircon}`}} innerStyle={{paddingTop: '0', paddingBottom: '0'}}>
           <FBMenuNav
             mealTypes={mealTypes}
             filterListVisible={this.state.filterListVisible}
             selectedFiltersCount={this.state.selectedFilters.length}
             onFilterLinkClick={this.toggleFilterListVisibility}
           />
-          {this.state.filterListVisible &&
-            <FBMenuFilter
-              groups={foodGroups}
-              selectedFilters={[]}
-              onFilterSelection={this.onFilterSelection}
-            />
-          }
-        </section>
-      </FBSection>
+        </FBSection>
+        {this.state.filterListVisible &&
+          <FBMenuFilter
+            groups={foodGroups}
+            selectedFilters={this.state.selectedFilters}
+            onFilterSelection={this.onFilterSelection}
+          />
+        }
+      </section>
     );
   }
 }

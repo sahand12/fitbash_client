@@ -1,6 +1,8 @@
 @import '../vars';
 .fbMenuNav {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .fbMenuNav--list {
   display: flex;
@@ -11,9 +13,11 @@
   font-size: 1.5rem;
   a {
     display: block;
-    padding: 1.2rem 0;
+    padding: 1.2rem 0.8rem;
   }
 }
-.fbMenuNav--list--item + .fbMenuNav--list--item {
-  margin-right: 1.5rem;
+.fbMenuNav--list--item:first-child {
+  a {
+    padding-right: 0;
+  }
 }

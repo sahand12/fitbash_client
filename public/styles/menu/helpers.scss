@@ -1,6 +1,23 @@
+@import '../vars';
 .fbDisplayNone {
   display: none;
 }
 .fbHidden {
   visibility: hidden;
 }
+
+.fbRow-5-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fbRow-5-2--col {
+  flex: 0 0 50%;
+}
+
+@media only screen and (min-width: $phoneBreakPoint) {
+  .fbRow-5-2--col {
+    flex: 0 0 20%;
+  }
+}
+

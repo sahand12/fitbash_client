@@ -1,18 +1,69 @@
 @import "../vars";
 .fbMenuFilter {
-  position: relative;
+  color: $stardust;
+  background: white;
+  text-align: center;
+  margin-top: -2rem;
+  padding: 0 0.5rem;
+}
+.fbMenuFilter--box {}
+.fbMenuFilter--box--heading {
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin: 2rem 0;
+}
+.fbMenuFilter--box--listWrapper {}
+.fbMenuFilter--box--list {}
+.fbMenuFilter--box--listItem {
+  box-sizing: border-box;
+  padding: 0.8rem;
+  a {
+    padding: 1.3rem 0;
+    position: relative;
+    display: block;
+    font-size: 1.6rem;
+    border: 2px solid $stardust;
+
+    &:hover {
+      background-color: darken(white, 5%);
+    }
+  }
+}
+.fbMenuFilter--box--listItemIcon {
+  font-size: 1.6rem;
+  color: $ferrariRed;
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  right: 1.6rem;
+}
+.fbMenuFilter--box--listItemText {}
+.fbMenuFilter--box--listItem-isSelected {
+  color: $ferrariRed !important;
+
+  a {
+    background-color: rgba($ferrariRed, 0.08);
+    color: inherit;
+    border: 2px solid $ferrariRed;
+    &:hover {
+      background-color: rgba($ferrariRed, 0.12);
+    }
+  }
+}
+.fbMenuFilter--box--footer {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin: 2rem 0;
 }
 
 .fbMenuFilter--link {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-size: 1.4rem;
   font-weight: 100;
   padding: 1.2rem 0;
 }
 .fbMenuFilter--link--btn {
   color: $mountainMeadow;
+  height: 18px;
+  line-height: 18px;
   &:hover {
     color: darken($mountainMeadow, 10%);
   }

@@ -21,8 +21,8 @@ const FBMenuNav = function FBMenuNav(props: Props) {
           <li className='fbMenuNav--list--item' key={type.id}>
             <Link
               className='fbLink'
-              href={`${type.name}Meals`}
-              to={`${type.name}Meals`}
+              href={`#${type.name}Meals`}
+              to={`#${type.name}Meals`}
             >
               {type.t[locale].name}
             </Link>
@@ -31,7 +31,7 @@ const FBMenuNav = function FBMenuNav(props: Props) {
       </ul>
       <FBMenuFilterLink
         filterListVisible={props.filterListVisible}
-        count={props.selectedFiltersCount || 10}
+        count={props.selectedFiltersCount}
         onClick={props.onFilterLinkClick}
       />
     </section>
