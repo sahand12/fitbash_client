@@ -246,7 +246,7 @@ class FBMenu extends Component<Props, State> {
           <FBMenuSection title={type.t[locale].name} key={type.id}>
             {this.state.filteredMeals
               .filter((meal: Meal) => meal.typeId === type.id)
-              .map((meal: Meal) => this.renderMealCard(meal, true))
+              .map((meal: Meal) => this.renderMealCard(meal, false))
             }
           </FBMenuSection>
         ))}

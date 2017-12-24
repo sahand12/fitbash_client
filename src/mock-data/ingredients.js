@@ -207,7 +207,7 @@ const translate = function translate(str) {
   return ingredientsHash[str.toLowerCase()] || str;
 };
 
-const string = 'Water, Shrimp, Tomatoes, White Rice, Artichoke Hearts, Expeller Pressed Canola Oil, Roasted Tomatoes (Tomatoes, Canola Oil, Garlic, Vinegar, Oregano, Salt), Butter (Cream, Natural Flavoring), Lemon Juice, Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Garlic, White Balsamic Vinegar (Wine Vinegar, Concentrated Grape Must), Chablis, Honey, Sea Salt, Red Wine Vinegar (Red Wine Vinegar, Water), Spices, Nutritional Yeast, Dehydrated Garlic, Xanthan Gum, Citric Acid, Natural Flavor.';
+const string = 'Eggs (Eggs, Citric Acid), Spinach, Tomatoes, Bacon (Pork, Water, Salt, Sugar, Celery Powder, Natural Flavor), Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Expeller Pressed Canola Oil.';
 
 const mealTree = createTree('مرغ با برنج مخلوط', string);
 const output = mealTree.map(translate)

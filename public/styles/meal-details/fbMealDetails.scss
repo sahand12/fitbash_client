@@ -1,0 +1,60 @@
+@import "../vars";
+.fbMealDetails {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.fbMealDetails--imageContainer {
+  flex: 1 1 100%;
+}
+.fbMealDetails--image {
+  img {
+    width: 100%;
+  }
+}
+
+.fbMealDetails--contentContainer {
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  padding: 0 1rem 0 0;
+}
+.fbMealDetails--contentHeading {
+  padding: 2rem 0.8rem 3.6rem 0.8rem;
+  border-bottom: 1px solid $zircon;
+  text-align: center;
+}
+
+.fbMealDetails--titleWrapper {
+  margin-top: 1.25rem;
+}
+.fbMealDetails--title {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.fbMealDetails--badgesWrapper {}
+.fbMealDetails--badges {}
+
+.fbMealDetails--contentBody {
+  margin-top: 1rem;
+}
+.fbMealDetails--tabs {}
+
+@media only screen and (min-width: $phoneBreakPoint) {
+  .fbMealDetails--contentContainer {
+    flex: 1 1 50%;
+  }
+  .fbMealDetails--imageContainer {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (min-width: $tabletBreakPoint) {
+  .fbMealDetails--contentContainer {
+    flex: 1 1 42%;
+  }
+  .fbMealDetails--imageContainer {
+    flex: 1 1 58%;
+  }
+}
