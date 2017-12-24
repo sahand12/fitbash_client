@@ -35,7 +35,6 @@ type FBMenuFilterBoxProps = {
   classNames: string,
 };
 const FBMenuFilterBox = function FBMenuFilterBox(props: FBMenuFilterBoxProps) {
-  console.log('fbMenuFilterBox', props);
   return (
     <section className='fbMenuFilter--box'>
       <h3 className='fbMenuFilter--box--heading'>

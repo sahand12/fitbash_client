@@ -6,7 +6,7 @@ import type {Meal, MealPrice, Ribbon} from '../../../models';
 import FBMealCardRegular from './FBMealCardRegular';
 import FBMealCardCompact from './FBMealCardCompact';
 
-type Props = {
+export type FBMealCardProps = {
   isCompact: boolean,
   isOrderable: boolean,
   meal: Meal,
@@ -18,12 +18,11 @@ type Props = {
   onIncrement: Function,
   onDecrement: Function,
   onClick: Function,
-  onClose: Function,
 };
-function FBMealCard (props: Props) {
+function FBMealCard (props: FBMealCardProps) {
   return (props.isCompact
     ? <FBMealCardCompact 
-        {...pick(props, ['meal', 'mealPrice', 'count', 'minOrder', 'maxOrder', 'onIncrement', 'onDecrement', 'onClose'])}
+        {...pick(props, ['meal', 'mealPrice', 'count', 'minOrder', 'maxOrder', 'onIncrement', 'onDecrement'])}
       />
     : <FBMealCardRegular
         {...pick(props, ['isOrderable', 'meal', 'mealPrice', 'count', 'ribbon', 'minOrder', 'maxOrder', 'onIncrement', 'onDecrement', 'onClick'])}

@@ -1,7 +1,10 @@
 [
   {
     "id": 696809,
-    "type": "MealMain",
+    "typeId": "1",
+    "foodGroups": [
+      "5"
+    ],
     "name": "Chicken \u0026 Rice Pilaf",
     "description": "Hearty and deliciously nutritious, we dress our juicy grilled chicken breast in savory herb gravy. It is served over a three-grain rice pilaf and accompanied with a side of crisp green beans and matchstick carrots, which are lightly seasoned in a garlicky oil.",
     "slug": null,
@@ -11,89 +14,92 @@
       "main"
     ],
     "ingredients": "Cooked Brown Rice, Chicken Breast, Green Beans, Water, Cooked Wild Rice, Carrots, Red Rice, Onion, Chicken Stock (Chicken Stock, Roasted Chicken Stock, Mirepoix Stock (Carrot, Celery, Onion Stocks), Dried Chicken Stock, Salt, Gelatin, Water, White Wine), Expeller Pressed Canola Oil, Celery, Bell Peppers, Almonds, Garlic, Sea Salt, Chicken Fat, Rice Flour, Cassava Flour, Butter (Cream, Natural Flavoring), Spices, Baking Soda.",
-    "containedAllergens": ["Milk", "Tree Nuts (Almond)"],
+    "containedAllergens": [
+      "Milk",
+      "Tree Nuts (Almond)"
+    ],
     "options": {},
     "sideDishName": "Green Beans \u0026 Carrots",
     "nutritionWithDailyValues": {
-      "serving_unit": {
+      "servingUnit": {
         "value": 1.0,
-        "value_label": "1"
+        "valueLabel": "1"
       },
-      "serving_size": {
+      "servingSize": {
         "value": 383.0,
-        "value_label": "383"
+        "valueLabel": "383"
       },
       "calories": {
         "value": 480.0,
-        "value_label": "480"
+        "valueLabel": "480"
       },
       "protein": {
         "value": 44.0,
-        "value_label": "44"
+        "valueLabel": "44"
       },
-      "calories_from_fat": {
+      "caloriesFromFat": {
         "value": 130.0,
-        "value_label": "130"
+        "valueLabel": "130"
       },
-      "total_fat": {
+      "totalFat": {
         "value": 15.0,
-        "value_label": "15",
-        "fda_daily_percent": 23,
-        "fda_daily_percent_label": "23"
+        "valueLabel": "15",
+        "fdaDailyPercent": 23,
+        "fdaDailyPercentLabel": "23"
       },
-      "saturated_fat": {
+      "saturatedFat": {
         "value": 3.0,
-        "value_label": "3",
-        "fda_daily_percent": 15,
-        "fda_daily_percent_label": "15"
+        "valueLabel": "3",
+        "fdaDailyPercent": 15,
+        "fdaDailyPercentLabel": "15"
       },
-      "trans_fat": {
+      "transFat": {
         "value": 0.0,
-        "value_label": "0"
+        "valueLabel": "0"
       },
       "carbohydrates": {
         "value": 42.0,
-        "value_label": "42",
-        "fda_daily_percent": 14,
-        "fda_daily_percent_label": "14"
+        "valueLabel": "42",
+        "fdaDailyPercent": 14,
+        "fdaDailyPercentLabel": "14"
       },
       "cholesterol": {
         "value": 100.0,
-        "value_label": "100",
-        "fda_daily_percent": 33,
-        "fda_daily_percent_label": "33"
+        "valueLabel": "100",
+        "fdaDailyPercent": 33,
+        "fdaDailyPercentLabel": "33"
       },
       "sodium": {
         "value": 790.0,
-        "value_label": "790",
-        "fda_daily_percent": 33,
-        "fda_daily_percent_label": "33"
+        "valueLabel": "790",
+        "fdaDailyPercent": 33,
+        "fdaDailyPercentLabel": "33"
       },
-      "dietary_fiber": {
+      "dietaryFiber": {
         "value": 6.0,
-        "value_label": "6",
-        "fda_daily_percent": 24,
-        "fda_daily_percent_label": "24"
+        "valueLabel": "6",
+        "fdaDailyPercent": 24,
+        "fdaDailyPercentLabel": "24"
       },
       "sugars": {
         "value": 6.0,
-        "value_label": "6"
+        "valueLabel": "6"
       },
-      "vitamin_a": {
+      "vitaminA": {
         "value": 160.0,
-        "value_label": "160"
+        "valueLabel": "160"
       },
-      "vitamin_c": {
+      "vitaminC": {
         "value": 30.0,
-        "value_label": "30"
+        "valueLabel": "30"
       },
       "calcium": {
         "value": 8.0,
-        "value_label": "8"
+        "valueLabel": "8"
       },
       "iron": {
         "value": 15.0,
-        "value_label": "15"
+        "valueLabel": "15"
       }
     },
     "prettyOptionsLabel": null,
@@ -110,8 +116,1776 @@
     "mainRatingRecentAverageNormalized": 4.21,
     "t": {
       "fa": {
-        "categories": ["غذای اصلی"],
-        "containedAllergens": ["لبنیات (شیر)", " آجیل ( بادام)"],
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          " آجیل ( بادام)"
+        ],
+        "description": "دلچسب و خوشمزه مُغَذّی، ما مرغ کباب‌شده آبدارمان را با آب مرغ و سبزیجات معطر تکمیل میکنیم. این غذا با برنج مخلوطی که شامل سه دانه روغنیست سرو می‌شود. همچنین در کنار آن لوبیا سبز تُرد و هویج قلمی که در روغن همراه با سیر تف داده‌شده قرار دارد.",
+        "displayName": "مرغ با برنج مخلوط همراه با لوبیا سبز و هویج",
+        "ingredients": "برنج قهوه‌ای پخته‌شده، سینه مرغ، لوبیا سبز، آب، برنج وحشی پخته‌شده، هویج، برنج قرمز، آب مرغ پخته‌شده (آب مرغ، آب مرغ بریان شده، سبزیجات پخته‌شده (هویج، کرفس، پیاز)، مرغ دودی، نمک، ژلاتین، نمک دریا، شراب سفید)، روغن کانولا فشرده‌شده، کرفس، فلفل دلمه‌ای، بادام، سیر، نمک دریا، چربی مرغ، آرد برنج، آرد کاساوا، کره (خامه، طعم‌دهنده‌های طبیعی)، ادویه‌جات، جوش شیرین",
+        "name": "مرغ با برنج مخلوط",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "لوبیا سبز و هویج",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "62445",
+    "typeId": "2",
+    "foodGroups": [
+      "1",
+      "2"
+    ],
+    "name": "Garden Omelette",
+    "description": "Bring garden-fresh vegetables straight to your table with this light and delicious omelette featuring fresh tomatoes, broccoli, mushroom, green onions, and cage-free eggs topped with Swiss cheese.",
+    "slug": null,
+    "base_sku": "GRDN_OMT",
+    "sku": "GRDN_OMT(62445)",
+    "categories": [
+      "breakfast"
+    ],
+    "ingredients": "Eggs (Eggs, Citric Acid), Swiss Cheese (Part Skim Milk, Cheese Culture, Salt, Enzymes, Potato Starch, Cellulose), Tomatoes, Broccoli, Expeller Pressed Canola Oil, Mushrooms, Green Onion.",
+    "containedAllergens": [
+      "Egg",
+      "Milk"
+    ],
+    "options": {
+      "cheese": true
+    },
+    "sideDishName": "",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 383.0,
+        "valueLabel": "383"
+      },
+      "calories": {
+        "value": 206.0,
+        "valueLabel": "206"
+      },
+      "protein": {
+        "value": 23.0,
+        "valueLabel": "23"
+      },
+      "caloriesFromFat": {
+        "value": 250.0,
+        "valueLabel": "250"
+      },
+      "totalFat": {
+        "value": 28.0,
+        "valueLabel": "28",
+        "fdaDailyPercent": 43,
+        "fdaDailyPercentLabel": "43"
+      },
+      "saturatedFat": {
+        "value": 9.0,
+        "valueLabel": "9",
+        "fdaDailyPercent": 45,
+        "fdaDailyPercentLabel": "45"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 5.0,
+        "valueLabel": "5",
+        "fdaDailyPercent": 2,
+        "fdaDailyPercentLabel": "2"
+      },
+      "cholesterol": {
+        "value": 630.0,
+        "valueLabel": "630",
+        "fdaDailyPercent": 210,
+        "fdaDailyPercentLabel": "210"
+      },
+      "sodium": {
+        "value": 210.0,
+        "valueLabel": "210",
+        "fdaDailyPercent": 9,
+        "fdaDailyPercentLabel": "9"
+      },
+      "dietaryFiber": {
+        "value": 1.0,
+        "valueLabel": "1",
+        "fdaDailyPercent": 4,
+        "fdaDailyPercentLabel": "4"
+      },
+      "sugars": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "vitaminA": {
+        "value": 30.0,
+        "valueLabel": "30"
+      },
+      "vitaminC": {
+        "value": 90.0,
+        "valueLabel": "90"
+      },
+      "calcium": {
+        "value": 25.0,
+        "valueLabel": "25"
+      },
+      "iron": {
+        "value": 20.0,
+        "valueLabel": "20"
+      }
+    },
+    "prettyOptionsLabel": "w/ cheese",
+    "displayName": "Garden Omelette (w/ cheese)",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-a9005906-2b3e-4397-8e12-1050243cb26d.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 3.44,
+    "t": {
+      "fa": {
+        "categories": [
+          "صبحانه"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          "تخم‌مرغ"
+        ],
+        "description": "سبزیجات تازه چیده‌شده از باغ را مستقیم به سر سفره‌تان بیاورید با این املت خوشمزه که برای درست کردن آن از گوجه‌فرنگی تازه، کلم بروکلی، قارچ، پیازچه و تخم‌مرغ همراه با پنیر سویئسی استفاده شده‌است.",
+        "displayName": "املت باغچه (با/بدون پنیر)",
+        "ingredients": "تخم‌مرغ (تخم‌مرغ، اسید سیتریک)، پنیر سوئیسی (شیر بدون چربی، مخمر پنیر، نمک، آنزیم‌ها، نشاسته سیب‌زمینی، سلولز)، گوجه‌فرنگی، کلم بروکلی، روغن کانولا اکسپرس، قارچ، پیازچه.",
+        "name": "املت باغچه",
+        "options": {
+          "پنیر": true
+        },
+        "prettyOptionsLabel": "با/بدون پنیر",
+        "sideDishName": "",
+        "slug": "",
+        "type": "صبحانه"
+      }
+    }
+  },
+  {
+    "id": "696861",
+    "typeId": "1",
+    "foodGroups": [
+      "6"
+    ],
+    "name": "Sausage \u0026 Peppers",
+    "description": "You might not associate Italian-American comfort food with “low carb,” but this dish is about to change that. Our paleo version of the Italian street-fair favorite sticks closely to the original, featuring seared sausage with roasted red and green peppers and onions topped with our delightfully simple marinara. On the side, we switch things up with a cauliflower rice that’s mixed with Italian mainstays tomato, garlic, and basil. \n\nAll of the sausage in our meals is provided by Polidori, a 4th-generation, family-owned producer. Polidori uses only the finest cuts of pork with all-natural spices—no MSG or preservatives.",
+    "slug": null,
+    "base_sku": "SSG_PPR",
+    "sku": "SSG_PPR(696861)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Italian Sausage (Pork, Water, Salt, Spices, Paprika, Natural Flavoring), Cauliflower, Marinara Sauce (Diced Tomatoes (Tomatoes, Tomato Juice, Citric Acid, Calcium Chloride), Tomato Puree (Water, Tomato Paste), Olive Oil, Onions, Tapioca Starch, Spices, Garlic, Honey, Sea Salt, Salt, Citric Acid), Bell Peppers, White Onion, Tomatoes, Expeller Pressed Canola Oil, White Balsamic Vinegar (Wine Vinegar, Concentrated Grape Must), Garlic, Sea Salt, Honey, Dehydrated Garlic, Spices.",
+    "containedAllergens": [],
+    "options": {},
+    "sideDishName": "Tomato-Cauliflower Rice",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 397.0,
+        "valueLabel": "397"
+      },
+      "calories": {
+        "value": 410.0,
+        "valueLabel": "410"
+      },
+      "protein": {
+        "value": 22.0,
+        "valueLabel": "22"
+      },
+      "caloriesFromFat": {
+        "value": 230.0,
+        "valueLabel": "230"
+      },
+      "totalFat": {
+        "value": 25.0,
+        "valueLabel": "25",
+        "fdaDailyPercent": 38,
+        "fdaDailyPercentLabel": "38"
+      },
+      "saturatedFat": {
+        "value": 7.0,
+        "valueLabel": "7",
+        "fdaDailyPercent": 35,
+        "fdaDailyPercentLabel": "35"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 27.0,
+        "valueLabel": "27",
+        "fdaDailyPercent": 9,
+        "fdaDailyPercentLabel": "9"
+      },
+      "cholesterol": {
+        "value": 75.0,
+        "valueLabel": "75",
+        "fdaDailyPercent": 25,
+        "fdaDailyPercentLabel": "25"
+      },
+      "sodium": {
+        "value": 860.0,
+        "valueLabel": "860",
+        "fdaDailyPercent": 36,
+        "fdaDailyPercentLabel": "36"
+      },
+      "dietaryFiber": {
+        "value": 5.0,
+        "valueLabel": "5",
+        "fdaDailyPercent": 20,
+        "fdaDailyPercentLabel": "20"
+      },
+      "sugars": {
+        "value": 12.0,
+        "valueLabel": "12"
+      },
+      "vitaminA": {
+        "value": 35.0,
+        "valueLabel": "35"
+      },
+      "vitaminC": {
+        "value": 420.0,
+        "valueLabel": "420"
+      },
+      "calcium": {
+        "value": 10.0,
+        "valueLabel": "10"
+      },
+      "iron": {
+        "value": 15.0,
+        "valueLabel": "15"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Chicken \u0026 Rice Pilaf with Green Beans \u0026 Carrots",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-cc49aaed-0456-487f-8f26-95011decff54.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 3.98,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [],
+        "description": "شما ممکن است فکر کنید غذای ایتالیایی-آمریکایی با کربوهیدرات کم یک شوخی بیش نیست، اما این غذا فکر شما را عوض خواهد کرد. مدل رژیمی ما از این غذای ایتالیایی بسیار شبیه به همان چیزیست که در خیابان‌های رم توسط دکه‌ها درست میشود. این غذا مخلوط شگفت انگیزی از سوسیس کباب‌شده، فلفل دلمه‌ای کباب‌شده سبز، نارنجی، زرد و قرمز، پیاز قرمز والبته سس مارینارا دست‌ساز ماست. در کنار این مخلوط، ما اوضاع را کمی عوض کرده و برنج گل‌کلم دار که با گوجه‌فرنگی ایتالیایی و سیر و ریحان طعم‌دار شده‌است را قرار داده‌ایم.\n\nهمه سوسیس‌های ما محصول آندره است که یکی از قدیمی‌ترین و معتمد‌ترین برندها در تولید سوسیس است. آندره تنها از بهترین تکه‌های گوشت گوسفند و مرغ استفاده می‌کند همراه با چاشنی‌های طبیعی و بدون هرگونه مواد نگه‌دارنده.",
+        "displayName": "سوسیس و فلفل دلمه‌ای همراه با برنج گل‌کلم - ‌گوجه‌فرنگی",
+        "ingredients": "سوسیس ایتالیایی (گوشت خوک، نمک، ادویه‌جات، پاپریکا الک‌شده، طعم‌دهنده‌های طبیعی)، گل‌کلم، سس مارینارا (گوجه‌فرنگی تکه‌تکه‌شده (گوجه‌فرنگی، رب گوجه‌فرنگی، اسید سیتریک، کلسیم کلراید)، پوره گوجه‌فرنگی (آب، رب گوجه‌فرنگی)، روغن زیتون، پیاز، نشاسته تاپیوکا، ادویه‌جات، سیر، عسل، نمک دریا، نمک، اسید سیتریک)، فلفل دلمه‌ای، پیاز سفید، گوجه‌فرنگی، روغن کانولا اکسپرس، سرمه بالزامیک سفید (سرکه شراب، عصاره انگور)، سیر، نمک دریا، عسل، سیر خشک‌شده، ادویه‌جات",
+        "name": "سوسیس با فلفل دلمه‌ای",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "برنج گوجه‌فرنگی - گل‌کلم",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696774",
+    "typeId": "1",
+    "foodGroups": [
+      "1",
+      "2"
+    ],
+    "name": "Veggie Baked Penne",
+    "description": "We fold gluten-free penne pasta into a creamy blend of fresh ricotta cheese, sautéed zucchini, grape tomatoes, spinach, and herbs, then top it with mozzarella and Parmesan cheese. We bake the dish al forno (translation: baked in the oven!) and place it inside of our standard tray, ready to heat and eat. Mangia!",
+    "slug": null,
+    "base_sku": "BKD_PNNE",
+    "sku": "BKD_PNNE(696774)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Marinara Sauce (Diced Tomatoes (Tomatoes, Tomato Juice, Citric Acid, Calcium Chloride), Tomato Puree (Water, Tomato Paste), Olive Oil, Onions, Tapioca Starch, Spices, Garlic, Honey, Sea Salt, Salt, Citric Acid), Penne (Water Brown Rice Flour, Potato Starch, Tapioca Starch, Whole Egg, Salt, Xanthan Gum), Zucchini, Tomatoes, Water, Spinach, Onion, Ricotta Cheese (Whey, Whole Milk, Cream, Culture, Vinegar, Salt), Mozzarella Cheese (Milk, Cheese Cultures, Salt, Enzymes, Potato Starch, Cellulose, Natamycin), Expeller Pressed Canola Oil, Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Milk Protein Isolate, Garlic, Sea Salt, Spices.",
+    "containedAllergens": [
+      "Milk",
+      "Egg"
+    ],
+    "options": {},
+    "sideDishName": "Sautéed Zucchini and Spinach",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 360.0,
+        "valueLabel": "360"
+      },
+      "calories": {
+        "value": 430.0,
+        "valueLabel": "430"
+      },
+      "protein": {
+        "value": 20.0,
+        "valueLabel": "20"
+      },
+      "caloriesFromFat": {
+        "value": 180.0,
+        "valueLabel": "180"
+      },
+      "totalFat": {
+        "value": 20.0,
+        "valueLabel": "20",
+        "fdaDailyPercent": 31,
+        "fdaDailyPercentLabel": "31"
+      },
+      "saturatedFat": {
+        "value": 6.0,
+        "valueLabel": "6",
+        "fdaDailyPercent": 30,
+        "fdaDailyPercentLabel": "30"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 49.0,
+        "valueLabel": "49",
+        "fdaDailyPercent": 16,
+        "fdaDailyPercentLabel": "16"
+      },
+      "cholesterol": {
+        "value": 60.0,
+        "valueLabel": "60",
+        "fdaDailyPercent": 20,
+        "fdaDailyPercentLabel": "20"
+      },
+      "sodium": {
+        "value": 720.0,
+        "valueLabel": "720",
+        "fdaDailyPercent": 30,
+        "fdaDailyPercentLabel": "30"
+      },
+      "dietaryFiber": {
+        "value": 5.0,
+        "valueLabel": "5",
+        "fdaDailyPercent": 20,
+        "fdaDailyPercentLabel": "20"
+      },
+      "sugars": {
+        "value": 8.0,
+        "valueLabel": "8"
+      },
+      "vitaminA": {
+        "value": 50.0,
+        "valueLabel": "50"
+      },
+      "vitaminC": {
+        "value": 60.0,
+        "valueLabel": "60"
+      },
+      "calcium": {
+        "value": 45.0,
+        "valueLabel": "45"
+      },
+      "iron": {
+        "value": 15.0,
+        "valueLabel": "15"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Veggie Baked Penne with Sautéed Zucchini and Spinach",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-4ea4aa4c-d979-4c1c-9bc6-9008e65c4742.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.25,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          "تخم‌مرغ"
+        ],
+        "description": "ما پاستای پِن فاقد گلوتن را با معجونی از پنیر ریکوتا تازه، کدو سبز بخار‌پز شده، گوجه‌فرنگی‌ انگوری، اسفناج و سبزیجات معطّر مخلوط می‌کنیم و سپس روی آن‌ پنیر موتزارلا و پنیر پارمزان می‌ریزیم. ما این غذا را در فر میپزیم و سپس داخل ظرف مخصوص خودمان می‌گذریم، آماده برای گرم شدن و نوش جان کردن. هوووورا!.",
+        "displayName": "سوسیس و فلفل دلمه‌ای همراه با برنج گل‌کلم - ‌گوجه‌فرنگی",
+        "ingredients": "سُس مارینارا (گوجه‌فرنگی‌ تکه‌تکه‌شده (گوجه‌فرنگی‌، آب گوجه‌فرنگی‌، اسید سیتریک، کلسیم کلراید)، پوره گوجه‌فرنگی‌ (آب، رب گوجه‌فرنگی‌)، روغن زیتون، پیاز، نشاسته تاپیوکا، ادویه‌جات، سیر، عسل، نمک دریا، نمک، اسید سیتریک)، پاستا پِن (آرد برنج قهوه‌‌ای، نشاسته سیب‌زمینی‌، نشاسته تاپیوکا، تخم‌مرغ، نمک، صمغ زانتان)، کدو سبز، گوجه‌فرنگی‌، آب، اسفناج، پیاز، پنیر ریکوتا (کشک، شیر پر‌چرب، خامه، مخمر، سرکه، نمک)، پنیر موتزارلا (شیر، مخمر پنیر، نمک، آنزیم، نشاسته سیب‌زمینی‌، سلولوز، ناتامایسین)، روغن کانولا اکسپرس، پنیر پارمزان (شیر، مخمر پنیر، نمک، آنزیم، سلولوز)، پروتئین شیر، سیر، نمک دریا، ادویه‌جات",
+        "name": "سبزیجات پخته‌شده با پاستا پِن",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "کدو سبز با اسفناج",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696859",
+    "typeId": "1",
+    "foodGroups": [
+      "5"
+    ],
+    "name": "Grilled Chicken Risotto",
+    "description": "Based on an Italian classic, we created this meal to feature one of our favorite comforting fall flavors. Our chefs fold butternut squash purée and buttery Parmesan cheese into a creamy risotto made with oyster mushrooms and sautéed onions, creating a sweet-and-savory base for juicy grilled chicken and roasted butternut squash (yes, this dish has a double hit of butternut flavor). For a little extra freshness, try topping your dish with fragrant chopped parsley, a sprinkle of nutty grated Parmesan, and fresh cracked pepper.",
+    "slug": null,
+    "base_sku": "CHK_RST_BTR",
+    "sku": "CHK_RST_BTR(696859)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Chicken Breast, Water, Butternut Squash, Arborio Rice, Onion, Half and Half (Milk, Cream), Oyster Mushrooms, Chablis, Butter (Cream, Natural Flavoring), Mushrooms, Garlic, Expeller Pressed Canola Oil, Cream Cheese (Milk, Cream, Cheese Culture, Salt, Carob Bean, Xanthan Gum, Guar Gum), Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Honey, Sea Salt, Rice Flour, Spices, Dehydrated Onion, Dehydrated Garlic, Baking Soda.",
+    "containedAllergens": [
+      "Milk"
+    ],
+    "options": {},
+    "sideDishName": "Butternut Squash",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 428.0,
+        "valueLabel": "428"
+      },
+      "calories": {
+        "value": 600.0,
+        "valueLabel": "600"
+      },
+      "protein": {
+        "value": 44.0,
+        "valueLabel": "44"
+      },
+      "caloriesFromFat": {
+        "value": 220.0,
+        "valueLabel": "220"
+      },
+      "totalFat": {
+        "value": 24.0,
+        "valueLabel": "24",
+        "fdaDailyPercent": 37,
+        "fdaDailyPercentLabel": "37"
+      },
+      "saturatedFat": {
+        "value": 9.0,
+        "valueLabel": "9",
+        "fdaDailyPercent": 45,
+        "fdaDailyPercentLabel": "45"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 52.0,
+        "valueLabel": "52",
+        "fdaDailyPercent": 17,
+        "fdaDailyPercentLabel": "17"
+      },
+      "cholesterol": {
+        "value": 125.0,
+        "valueLabel": "125",
+        "fdaDailyPercent": 42,
+        "fdaDailyPercentLabel": "42"
+      },
+      "sodium": {
+        "value": 710.0,
+        "valueLabel": "710",
+        "fdaDailyPercent": 30,
+        "fdaDailyPercentLabel": "30"
+      },
+      "dietaryFiber": {
+        "value": 6.0,
+        "valueLabel": "6",
+        "fdaDailyPercent": 24,
+        "fdaDailyPercentLabel": "24"
+      },
+      "sugars": {
+        "value": 8.0,
+        "valueLabel": "8"
+      },
+      "vitaminA": {
+        "value": 290.0,
+        "valueLabel": "290"
+      },
+      "vitaminC": {
+        "value": 40.0,
+        "valueLabel": "40"
+      },
+      "calcium": {
+        "value": 15.0,
+        "valueLabel": "15"
+      },
+      "iron": {
+        "value": 15.0,
+        "valueLabel": "15"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Grilled Chicken Risotto with Butternut Squash",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-9ac4cd2b-b6a0-4dc2-91b3-0bb1a0f0c871.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.16,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)"
+        ],
+        "description": "بر پایهٔ یک غذای کلاسیک ایتالیایی‌، ما این غذا را آماده کردیم تا یکی‌ از مزه‌های مورد علاقهٔ پاییزی خودمان را به شما نشان دهیم. سر‌آشپز‌های ما پوره کدو گردویی و پنیر پارمزان کره‌ی را با معجون ریزوتو خامه‌ای مخلوط کردند تا یک پایهٔ شیرین و دلنشین برای مرغ کبابی آبدار و کدو گردویی له‌ شده تهیه کنند (و بله، این غذا ۲ برابر مزهٔ کدو گردویی دارد). برای یک ذره تازگی بیشتر، میتوانید کمی‌ جعفری ریز شده، پنیر پارمزان رنده‌شده و فلفل تازه پودر‌شده روی آن در هنگام سرو‌کردن بریزید.",
+        "displayName": "ریزوتو با مرغ کبابی و کدو گردویی",
+        "ingredients": "سینه مرغ، آب، کدو گردویی، برنج قهوه‌ای، پیاز، شیر، خامه، قارچ صدف، شراب سفید چابلیس، کره (خامه، طعم‌دهنده طبیعی)، قارچ، سیر، روغن کانولا اکسپرس، پنیر خامه‌ای (شیر، خامه، مخمر پنیر، نمک، لوبیا خرنوب، صمغ زانتان، صمغ گور)، پنیر پارمزان (شیر، مخمر پنیر، نمک، آنزیم، سلولوز)، عسل، نمک دریا، آرد برنج، ادویه‌جات، پیاز خشک‌شده، سیر خشک‌شده، جوش شیرین",
+        "name": "ریزوتو با مرغ کبابی",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "کدو گردویی",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696811",
+    "typeId": "1",
+    "foodGroups": [
+      "1",
+      "5"
+    ],
+    "name": "Buffalo Chicken Breast",
+    "description": "Now you can enjoy this American favorite outside of game day with Freshly's healthy spin on traditional buffalo chicken. Our chefs oven \"fry\" juicy chicken breast and coat it in spicy buffalo sauce.  It is served with a side of low-carb mashed cauliflower, loaded with creamy Greek yogurt, butter, chives, bacon and cheddar.",
+    "slug": null,
+    "base_sku": "BUF_CHX",
+    "sku": "BUF_CHX(696811)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Cauliflower, Chicken Breast, Water, Cheddar Cheese (Milk, Cheese Culture, Salt, Enzymes, Annatto, Potato Starch, Cellulose, Natamycin), Butter (Cream, Natural Flavoring), Expeller Pressed Canola Oil, Cayenne Pepper Sauce (Cayenne Peppers, Vinegar, Water, Salt, Garlic Powder), Bacon (Pork, Water, Salt, Sugar, Celery Powder, Natural Flavor), Greek Yogurt (Cultured Milk), Cassava Flour, Potato Flakes, Spices, Sea Salt, White Vinegar, Sunflower Lecithin, Rice Flour, Natural Flavors, Baking Soda, Paprika, Xanthan Gum.",
+    "containedAllergens": [
+      "Milk"
+    ],
+    "options": {},
+    "sideDishName": "Loaded Cauliflower",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 343.0,
+        "valueLabel": "343"
+      },
+      "calories": {
+        "value": 520.0,
+        "valueLabel": "520"
+      },
+      "protein": {
+        "value": 45.0,
+        "valueLabel": "45"
+      },
+      "caloriesFromFat": {
+        "value": 270.0,
+        "valueLabel": "270"
+      },
+      "totalFat": {
+        "value": 30.0,
+        "valueLabel": "30",
+        "fdaDailyPercent": 46,
+        "fdaDailyPercentLabel": "46"
+      },
+      "saturatedFat": {
+        "value": 13.0,
+        "valueLabel": "13",
+        "fdaDailyPercent": 65,
+        "fdaDailyPercentLabel": "65"
+      },
+      "transFat": {
+        "value": 0.5,
+        "valueLabel": "0.5"
+      },
+      "carbohydrates": {
+        "value": 17.0,
+        "valueLabel": "17",
+        "fdaDailyPercent": 6,
+        "fdaDailyPercentLabel": "6"
+      },
+      "cholesterol": {
+        "value": 150.0,
+        "valueLabel": "150",
+        "fdaDailyPercent": 50,
+        "fdaDailyPercentLabel": "50"
+      },
+      "sodium": {
+        "value": 970.0,
+        "valueLabel": "970",
+        "fdaDailyPercent": 40,
+        "fdaDailyPercentLabel": "40"
+      },
+      "dietaryFiber": {
+        "value": 4.0,
+        "valueLabel": "4",
+        "fdaDailyPercent": 16,
+        "fdaDailyPercentLabel": "16"
+      },
+      "sugars": {
+        "value": 4.0,
+        "valueLabel": "4"
+      },
+      "vitaminA": {
+        "value": 20.0,
+        "valueLabel": "20"
+      },
+      "vitaminC": {
+        "value": 130.0,
+        "valueLabel": "130"
+      },
+      "calcium": {
+        "value": 20.0,
+        "valueLabel": "20"
+      },
+      "iron": {
+        "value": 10.0,
+        "valueLabel": "10"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Buffalo Chicken Breast with Loaded Cauliflower",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-0262ec2f-7da0-4829-8069-d4947174cd98.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.23,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)"
+        ],
+        "description": "آلان شما میتوانید از این غذای مورد علاقه‌ آمریکایی‌ها خارج از روز مسابقه لذت ببرید. سر‌آشپز‌های ما سینه مرغ را داخل فر می‌گذرند و روی آنرا با سُس اسپایسی بوفالو میپوشانند. این غذا همراه با گل‌کلم له‌ شدهٔ کم کربوهیدرات که با ماست یونانی خامه‌ای، کره، بیکن و پنیر مخلوط شده‌است سرو میشود.",
+        "displayName": "سینه مرغ بوفالو همراه با مخلوط گل‌کلم",
+        "ingredients": "گل‌کلم، سینه مرغ، آب، پنیر چدار (شیر، مخمر پنیر، نمک، آنزیم، اناتو، نشاسته سیب‌زمینی‌، سلولوز، ناتامایسین)، کره (خامه، طعم‌دهنده‌های طبیعی)، روغن کانولا اکسپرس، سُس فلفل (فلفل کاین، سرکه، آب، نمک، پودر سیر)، بیکن (گوشت خوک، آب، نمک، شکر، پودر جعفری، طعم‌دهنده طبیعی)، ماست یونانی (مخمر ماست)، آرد کاساوا، سیب‌زمینی‌ نگینی‌خرد‌شده، ادویه‌جات، نمک دریا، سرکه سفید، لسیتین آفتاب‌گردن، آرد برنج، طعم‌دهنده طبیعی، جوش شیرین، پاپریکا، صمغ زانتان",
+        "name": "سینه مرغ بوفالو",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "مخلوط گل‌کلم",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": 696781,
+    "typeId": "1",
+    "foodGroups": [
+      "1",
+      "2",
+      "4",
+      "5",
+      "7"
+    ],
+    "name": "Roasted Turkey",
+    "description": "Celebrate the season with rich flavors, clean ingredients, and good taste. We serve roasted turkey over a baked stuffing made with brown rice and quinoa, topped with savory gravy. Paired with a creamy green bean and mushroom casserole, this meal makes every day feel like a holiday.",
+    "slug": null,
+    "base_sku": "HLD_TRKY",
+    "sku": "HLD_TRKY(696781)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Turkey (Turkey Breast, Water, Canola Oil, Salt, Black Pepper), Green Beans, Water, Cooked Brown Rice, Cooked Quinoa, Walnuts, Half and Half (Milk, Cream), Onion, Butter (Cream, Natural Flavoring), Mushrooms, Eggs (Eggs, Citric Acid), Carrots, Celery, Almonds, Chicken Stock (Chicken Stock, Roasted Chicken Stock, Mirepoix Stock (Carrot, Celery, Onion Stocks), Dried Chicken Stock, Salt, Gelatin, Water, White Wine), Expeller Pressed Canola Oil, Oat Bran, Asiago Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Sea Salt, Spices, Garlic, Dried Porcini Mushrooms, Dehydrated Garlic, Xanthan Gum, Chablis, Rice Flour.",
+    "containedAllergens": [
+      "Egg",
+      "Milk",
+      "Tree Nuts (Walnuts, Almond)."
+    ],
+    "options": {},
+    "sideDishName": "Quinoa Stuffing",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 397.0,
+        "valueLabel": "397"
+      },
+      "calories": {
+        "value": 560.0,
+        "valueLabel": "560"
+      },
+      "protein": {
+        "value": 41.0,
+        "valueLabel": "41"
+      },
+      "caloriesFromFat": {
+        "value": 295.0,
+        "valueLabel": "295"
+      },
+      "totalFat": {
+        "value": 33.0,
+        "valueLabel": "33",
+        "fdaDailyPercent": 51,
+        "fdaDailyPercentLabel": "51"
+      },
+      "saturatedFat": {
+        "value": 10.0,
+        "valueLabel": "10",
+        "fdaDailyPercent": 50,
+        "fdaDailyPercentLabel": "50"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 33.0,
+        "valueLabel": "33",
+        "fdaDailyPercent": 11,
+        "fdaDailyPercentLabel": "11"
+      },
+      "cholesterol": {
+        "value": 135.0,
+        "valueLabel": "135",
+        "fdaDailyPercent": 45,
+        "fdaDailyPercentLabel": "45"
+      },
+      "sodium": {
+        "value": 840.0,
+        "valueLabel": "840",
+        "fdaDailyPercent": 35,
+        "fdaDailyPercentLabel": "35"
+      },
+      "dietaryFiber": {
+        "value": 7.0,
+        "valueLabel": "7",
+        "fdaDailyPercent": 28,
+        "fdaDailyPercentLabel": "28"
+      },
+      "sugars": {
+        "value": 7.0,
+        "valueLabel": "7"
+      },
+      "vitaminA": {
+        "value": 40.0,
+        "valueLabel": "40"
+      },
+      "vitaminC": {
+        "value": 25.0,
+        "valueLabel": "25"
+      },
+      "calcium": {
+        "value": 15.0,
+        "valueLabel": "15"
+      },
+      "iron": {
+        "value": 20.0,
+        "valueLabel": "20"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Roasted Turkey with Quinoa Stuffing",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-3d9959a4-7d0e-4b18-a832-f25dd2a93f9a.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.06,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          "آجیل (بادام و گردو)",
+          "تخم‌مرغ"
+        ],
+        "description": "این فصل را با چاشنی‌های قوی، مواد اولیه تازه و مزه‌های خوب جشن بگیرید. ما بوقلمون گریل‌شده را با مخلوطی پخته‌شده شامل برنج قهوه‌ای و کینوا همراه با سس گِریوی شیرین سرو می‌کنیم. در کنار این‌ها همچنین لوبیا سبز تازه و قارچ نیز قرار داده‌ایم. این غذا به هر روز حسی مانند حس روزهای تعطیل میدهد.",
+        "displayName": "بوقلمون کبابی با چاشنی کینوآ",
+        "ingredients": "بوقلمون (سینه بوقلمون، آب، روغن کانولا، نمک، فلفل سیاه)، لوبیا سبز، آب، برنج قهوه‌ای پخته‌شده، کینوا پخته‌شده، گردو، نصف نصف (شیر، خامه)، پیاز، کره (خامه، طعم‌دهنده‌های طبیعی)، قارچ، تخم‌مرغ (تخم‌مرغ، اسید سیتریک)، هویج، جعفری، بادام، آب مرغ پخته‌شده (آب مرغ پخته‌شده، عصاره مرغ کباب‌شده، عصاره سبزیجات (هویج، جعفری، عصاره پیاز)، عصاره مرغ خشک‌شده، نمک، ژلاتین، آب، شراب سفید)، روغن کانولا اکسپرس، سبوس جو دو‌ سر، پنیر آسیاگو (شیر، مخمر پنیر، نمک، آنزیم‌ها، سلولز)، نمک دریا، ادویه‌جات،، سیر، قارچ تیره‌سر خشک‌شده، سیر خشک‌شده، صمغ زانتان، شراب سفید چابلیس، آرد برنج.",
+        "name": "بوقلمون کبابی",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "چاشنی کینوآ",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": 696853,
+    "typeId": "1",
+    "foodGroups": [
+      "5"
+    ],
+    "name": "Chicken Marsala",
+    "description": "Try this healthy Freshly version of the traditional Italian Chicken Marsala. We lightly coat chicken breast in 100% cassava flour and bake it to a golden perfection, for a fried chicken taste. It is topped in a rich marsala sauce of mushrooms, fresh herbs and marsala wine. Served over low- carb spaghetti squash and with a side of sautéed green beans and roasted, savory pearl onions.",
+    "slug": null,
+    "base_sku": "CHX_MSL",
+    "sku": "CHX_MSL(696853)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Chicken Breast, Green Beans, Spaghetti Squash, Water, Expeller Pressed Canola Oil, Onion, Mushrooms, Cassava Flour, Spices, Chicken Stock (Chicken Stock, Roasted Chicken Stock, Mirepoix Stock (Carrot, Celery, Onion Stocks), Dried Chicken Stock, Salt, Gelatin, Water, White Wine), Marsala Wine Reduction, Garlic, Sea Salt, Chicken Fat, Rice Flour, Dried Porcini Mushrooms, Lemon Juice, Honey, Paprika, Dehydrated Garlic, Dehydrated Onion, Baking Soda, Natural Flavor.",
+    "containedAllergens": [],
+    "options": {},
+    "sideDishName": "Spaghetti Squash \u0026 String Beans",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 428.0,
+        "valueLabel": "428"
+      },
+      "calories": {
+        "value": 470.0,
+        "valueLabel": "470"
+      },
+      "protein": {
+        "value": 41.0,
+        "valueLabel": "41"
+      },
+      "caloriesFromFat": {
+        "value": 190.0,
+        "valueLabel": "190"
+      },
+      "totalFat": {
+        "value": 22.0,
+        "valueLabel": "22",
+        "fdaDailyPercent": 34,
+        "fdaDailyPercentLabel": "34"
+      },
+      "saturatedFat": {
+        "value": 3.0,
+        "valueLabel": "3",
+        "fdaDailyPercent": 15,
+        "fdaDailyPercentLabel": "15"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 28.0,
+        "valueLabel": "28",
+        "fdaDailyPercent": 9,
+        "fdaDailyPercentLabel": "9"
+      },
+      "cholesterol": {
+        "value": 100.0,
+        "valueLabel": "100",
+        "fdaDailyPercent": 33,
+        "fdaDailyPercentLabel": "33"
+      },
+      "sodium": {
+        "value": 700.0,
+        "valueLabel": "700",
+        "fdaDailyPercent": 29,
+        "fdaDailyPercentLabel": "29"
+      },
+      "dietaryFiber": {
+        "value": 6.0,
+        "valueLabel": "6",
+        "fdaDailyPercent": 24,
+        "fdaDailyPercentLabel": "24"
+      },
+      "sugars": {
+        "value": 9.0,
+        "valueLabel": "9"
+      },
+      "vitaminA": {
+        "value": 30.0,
+        "valueLabel": "30"
+      },
+      "vitaminC": {
+        "value": 35.0,
+        "valueLabel": "35"
+      },
+      "calcium": {
+        "value": 10.0,
+        "valueLabel": "10"
+      },
+      "iron": {
+        "value": 20.0,
+        "valueLabel": "20"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Chicken Marsala with Spaghetti Squash \u0026 String Beans",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-3ff0d4b3-29c3-4183-93ff-79024a79ae91.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 3.97,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [],
+        "description": "این نسخه سالم و تازه از مخلوط مرغ با شراب مارسالا این غذای کلاسیک ایتالیایی را حتما امتحان کنید. ما سینه مرغ را کمی با آرد کاساوا ۱۰۰% میپوشانیم و سپس تا به رنگ طلایی کامل برسد کباب میکنیم تا به مزه مرغ سوخاری در بیاید. روی آن به مقدار کافی شراب مارسالا و قارچ که باهم به خوبی مخلوط شده اند میریزیم. در این سس سبزیجات معطر تازه برای طعم لذیذتر به آن اضافه شده است. در کنار اینها اسپاگتی کم کربوهیدرات له شده, لوبیا سبز و پیاز قرمز نیز قرار داده شده است .",
+        "displayName": "مرغ با شراب مارسالا همراه با اسپاگتی اِسکواش و لوبیا سبز",
+        "ingredients": "سینه مرغ، لوبیا سبز، اسپاگتی اِسکواش، آب، روغن کانولا اکسپرس، پیاز، قارچ، آرد کاساوا، ادویه‌جات،، آب مرغ پخته‌شده (آب مرغ پخته‌شده، عصاره مرغ کباب‌شده، عصاره سبزیجات (هویج، جعفری، عصاره پیاز)، عصاره مرغ خشک‌شده، نمک، ژلاتین، آب، شراب سفید)، شراب مارسالا غلیظ‌شده، سیر، نمک دریا، دنبه مرغ، آرد برنج، قارچ تیره‌سر خشک‌شده، آب لیموترش، عسل، پاپریکا، سیر خشک‌شده، پیاز خشک‌شده، جوش‌شیرین، طعم‌دهنده‌های طبیعی.",
+        "name": "مرغ با شراب مارسالا",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "اسپاگتی اِسکواش و لوبیا سبز",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696807",
+    "typeId": "1",
+    "foodGroups": [
+      "1", "5", "6"
+    ],
+    "name": "Steak Peppercorn",
+    "description": "Add a touch of gourmet to your steak dinner with this dish. Tender grilled steak sits on a bed of fluffy potato mash and is topped in a delectable peppercorn cream sauce. Served with a side of sautéed carrots, french green beans and roasted garlic.",
+    "slug": null,
+    "base_sku": "STK_PEP",
+    "sku": "STK_PEP(696807)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Flat Iron Steak, Potatoes, Green Beans, Carrots, Water, Half and Half (Milk, Cream), Butter (Cream, Natural Flavoring), Onion, Greek Yogurt (Cultured Milk), Garlic, Expeller Pressed Canola Oil, Sea Salt, Spices, Chicken Stock (Chicken Stock, Roasted Chicken Stock, Mirepoix Stock (Carrot, Celery, Onion Stocks), Dried Chicken Stock, Salt, Gelatin, Water, White Wine), Rice Flour, Cassava Flour, Chicken Fat, Lemon Juice, Dehydrated Garlic, Dried Porcini Mushrooms, Baking Soda.",
+    "containedAllergens": [
+      "Milk"
+    ],
+    "options": {},
+    "sideDishName": "Sautéed Carrots \u0026 French Green Beans",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 410.0,
+        "valueLabel": "410"
+      },
+      "calories": {
+        "value": 510.0,
+        "valueLabel": "510"
+      },
+      "protein": {
+        "value": 32.0,
+        "valueLabel": "32"
+      },
+      "caloriesFromFat": {
+        "value": 260.0,
+        "valueLabel": "260"
+      },
+      "totalFat": {
+        "value": 29.0,
+        "valueLabel": "29",
+        "fdaDailyPercent": 45,
+        "fdaDailyPercentLabel": "45"
+      },
+      "saturatedFat": {
+        "value": 14.0,
+        "valueLabel": "14",
+        "fdaDailyPercent": 70,
+        "fdaDailyPercentLabel": "70"
+      },
+      "transFat": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "carbohydrates": {
+        "value": 34.0,
+        "valueLabel": "34",
+        "fdaDailyPercent": 11,
+        "fdaDailyPercentLabel": "11"
+      },
+      "cholesterol": {
+        "value": 140.0,
+        "valueLabel": "140",
+        "fdaDailyPercent": 47,
+        "fdaDailyPercentLabel": "47"
+      },
+      "sodium": {
+        "value": 830.0,
+        "valueLabel": "830",
+        "fdaDailyPercent": 35,
+        "fdaDailyPercentLabel": "35"
+      },
+      "dietaryFiber": {
+        "value": 7.0,
+        "valueLabel": "7",
+        "fdaDailyPercent": 28,
+        "fdaDailyPercentLabel": "28"
+      },
+      "sugars": {
+        "value": 8.0,
+        "valueLabel": "8"
+      },
+      "vitaminA": {
+        "value": 200.0,
+        "valueLabel": "200"
+      },
+      "vitaminC": {
+        "value": 35.0,
+        "valueLabel": "35"
+      },
+      "calcium": {
+        "value": 15.0,
+        "valueLabel": "15"
+      },
+      "iron": {
+        "value": 25.0,
+        "valueLabel": "25"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Steak Peppercorn with Sautéed Carrots \u0026 French Green Beans",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-d7572537-5d74-4f92-81d9-cb28f8c47c4a.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.39,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)"
+        ],
+        "description": "کمی خوشمزگی بیشتر به غذای استیکتون اضافه کنید با این غذا. گوشت استیکی نرم بر روی پوره سیب زمینی قرار داده شده است و روی آن سس خامه و فلفل ریخته شده است. در کنار آن مخلوط لذیذی از سیر کبابی, لوبیا سبز فرانسوی و هویج بخارپز سرو میشود.",
+        "displayName": "استیک گوشت با فلفل تکه‌تکه‌شده همراه با هویج بخارپز و لوبیا سبز فرانسوی",
+        "ingredients": "گوشت راسته گاو استیکی، سیب‌زمینی، لوبیا سبز، هویج، آب، نصف نصف (شیر، خامه)، کره (خامه، طعم‌دهنده‌های طبیعی)، پیاز، ماست یونانی (شیر غنی‌شده با اسید لاکتیک)، سیر، روغن کانولا اکسپرس، نمک دریا، ادویه‌جات، آب مرغ پخته‌شده (آب مرغ پخته‌شده، عصاره مرغ کباب‌شده، عصاره سبزیجات (هویج، جعفری، عصاره پیاز)، عصاره مرغ خشک‌شده، نمک، ژلاتین، آب، شراب سفید)، آرد برنج، آرد کاساوا، دنبه مرغ، آب لیموترش، سیر خشک‌شده، قارچ تیره‌سر خشک‌شده، جوش‌شیرین",
+        "name": "استیک گوشت با فلفل تکه‌تکه‌شده",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "هویج بخارپز و لوبیا سبز فرانسوی",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696847",
+    "typeId": "2",
+    "foodGroups": [
+      "1", "2", "11"
+    ],
+    "name": "Homestyle Breakfast Platter",
+    "description": "Start your day off on a delicious note with this classic breakfast platter. Enjoy a fluffy cheddar omelette with our country-style breakfast sausage. This is served over a side of Potatoes O'Brien, a blend of seasoned roasted potatoes, sweet bell peppers and onions.",
+    "slug": null,
+    "base_sku": "HMST_BF",
+    "sku": "HMST_BF(696847)",
+    "categories": [
+      "breakfast"
+    ],
+    "ingredients": "Eggs (Eggs, Citric Acid), Potatoes, Pork Sausage (Pork, Salt, Spices, Fruit Juice), Bell Peppers, Cheddar Cheese (Milk, Cheese Culture, Salt, Enzymes, Annatto, Potato Starch, Cellulose, Natamycin), Expeller Pressed Canola Oil, Onion, Sea Salt, Dehydrated Garlic, Spices.",
+    "containedAllergens": [
+      "Milk",
+      "Egg"
+    ],
+    "options": {},
+    "sideDishName": "Potato Hash \u0026 Sausage Patty",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 276.0,
+        "valueLabel": "276"
+      },
+      "calories": {
+        "value": 570.0,
+        "valueLabel": "570"
+      },
+      "protein": {
+        "value": 28.0,
+        "valueLabel": "28"
+      },
+      "caloriesFromFat": {
+        "value": 38.0,
+        "valueLabel": "38"
+      },
+      "totalFat": {
+        "value": 42.0,
+        "valueLabel": "42",
+        "fdaDailyPercent": 65,
+        "fdaDailyPercentLabel": "65"
+      },
+      "saturatedFat": {
+        "value": 11.0,
+        "valueLabel": "11",
+        "fdaDailyPercent": 55,
+        "fdaDailyPercentLabel": "55"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 24.0,
+        "valueLabel": "24",
+        "fdaDailyPercent": 8,
+        "fdaDailyPercentLabel": "8"
+      },
+      "cholesterol": {
+        "value": 540.0,
+        "valueLabel": "540",
+        "fdaDailyPercent": 180,
+        "fdaDailyPercentLabel": "180"
+      },
+      "sodium": {
+        "value": 700.0,
+        "valueLabel": "700",
+        "fdaDailyPercent": 29,
+        "fdaDailyPercentLabel": "29"
+      },
+      "dietaryFiber": {
+        "value": 2.0,
+        "valueLabel": "2",
+        "fdaDailyPercent": 8,
+        "fdaDailyPercentLabel": "8"
+      },
+      "sugars": {
+        "value": 3.0,
+        "valueLabel": "3"
+      },
+      "vitaminA": {
+        "value": 25.0,
+        "valueLabel": "25"
+      },
+      "vitaminC": {
+        "value": 60.0,
+        "valueLabel": "60"
+      },
+      "calcium": {
+        "value": 20.0,
+        "valueLabel": "20"
+      },
+      "iron": {
+        "value": 25.0,
+        "valueLabel": "25"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Homestyle Breakfast Platter with Potato Hash \u0026 Sausage Patty",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-2f28ebb9-87df-4599-b0bf-3343609d3e20.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 3.73,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          "تخم‌مرغ"
+        ],
+        "description": "روز خودتان را با این غذای خوشمزه و مقوی شروع کنید. از یک املت پف دار با سوسیس محلی لذت ببرید. این غذا به همراه مخلوطی از سیب زمینی, فلفل دولمه ای و پیاز سرو میشود.",
+        "displayName": "دیس صبحانه خانگی همراه با پوره سیب‌زمینی و سوسیس",
+        "ingredients": "تخم‌مرغ (تخم‌مرغ، اسید سیتریک)، سیب‌زمینی، سوسیس خوک (گوشت خوک، نمک، ادویه‌جات، آب میوه)، فلفل دلمه‌ای، پنیر چدار (شیر، مخمر پنیر، نمک، آنزیم‌ها، آناتو، نشاسته سیب‌زمینی، سلولز، ناتامایسیسن)، روغن کانولا اکسپرس، پیاز، نمک دریا، سیر خشک‌شده، ادویه‌جات",
+        "name": "دیس صبحانه خانگی",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "پوره سیب‌زمینی و سوسیس",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "134658",
+    "typeId": "2",
+    "foodGroups": [
+      "1", "2", "11"
+    ],
+    "name": "BLT Omelette",
+    "description": "Switch up your morning routine with our breakfast version of the classic BLT. It features bacon, Parmesan cheese, fresh tomatoes, and nutrient-rich spinach, all blanketed into a cage-free egg omelette.",
+    "slug": null,
+    "base_sku": "BLT_OMT",
+    "sku": "BLT_OMT(134658)",
+    "categories": [
+      "breakfast"
+    ],
+    "ingredients": "Eggs (Eggs, Citric Acid), Spinach, Tomatoes, Bacon (Pork, Water, Salt, Sugar, Celery Powder, Natural Flavor), Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Expeller Pressed Canola Oil.",
+    "containedAllergens": [
+      "Milk",
+      "Egg"
+    ],
+    "options": {
+      "cheese": true
+    },
+    "sideDishName": "",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 227.0,
+        "valueLabel": "227"
+      },
+      "calories": {
+        "value": 420.0,
+        "valueLabel": "420"
+      },
+      "protein": {
+        "value": 28.0,
+        "valueLabel": "28"
+      },
+      "caloriesFromFat": {
+        "value": 295.0,
+        "valueLabel": "295"
+      },
+      "totalFat": {
+        "value": 33.0,
+        "valueLabel": "33",
+        "fdaDailyPercent": 51,
+        "fdaDailyPercentLabel": "51"
+      },
+      "saturatedFat": {
+        "value": 10.0,
+        "valueLabel": "10",
+        "fdaDailyPercent": 50,
+        "fdaDailyPercentLabel": "50"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 5.0,
+        "valueLabel": "5",
+        "fdaDailyPercent": 2,
+        "fdaDailyPercentLabel": "2"
+      },
+      "cholesterol": {
+        "value": 640.0,
+        "valueLabel": "640",
+        "fdaDailyPercent": 213,
+        "fdaDailyPercentLabel": "213"
+      },
+      "sodium": {
+        "value": 520.0,
+        "valueLabel": "520",
+        "fdaDailyPercent": 22,
+        "fdaDailyPercentLabel": "22"
+      },
+      "dietaryFiber": {
+        "value": 1.0,
+        "valueLabel": "1",
+        "fdaDailyPercent": 4,
+        "fdaDailyPercentLabel": "4"
+      },
+      "sugars": {
+        "value": 2.0,
+        "valueLabel": "2"
+      },
+      "vitaminA": {
+        "value": 60.0,
+        "valueLabel": "60"
+      },
+      "vitaminC": {
+        "value": 120.0,
+        "valueLabel": "120"
+      },
+      "calcium": {
+        "value": 25.0,
+        "valueLabel": "25"
+      },
+      "iron": {
+        "value": 20.0,
+        "valueLabel": "20"
+      }
+    },
+    "prettyOptionsLabel": "w/ cheese",
+    "displayName": "BLT Omelette (w/ cheese)",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-986e94e3-dfaf-477b-8438-151924de8e48.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 3.9,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          "تخم‌مرغ"
+        ],
+        "description": "صبح معمولاً روتین خود را با این نسخه ما  از املت بی ال تی تغییر دهید. این صبحانه شامل بیکِن، پنیر پارمزان، گوجه‌فرنگی تازه و اسفناج سرشار از مواد مفید غذایی است که همه آنها با هم در این املت قرارداده‌شده‌اند.",
+        "displayName": "املت بی ال تی",
+        "ingredients": "تخم‌مرغ (تخم‌مرغ، اسید سیتریک)، اسفناج، گوجه‌فرنگی، بیکِن (گوشت خوک، آب، نمک، شکر، پودر جعفری، طعم‌دهنده‌های طبیعی)، پنیر پارمزان (شیر، مخمر پنیر، نمک، آنزیم‌ها، سلولز)، روغن کانولا اکسپرس",
+        "name": "املت بی ال تی",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696854",
+    "typeId": "1",
+    "foodGroups": [
+      "1", "3"
+    ],
+    "name": "Shrimp Scampi",
+    "description": "Our chefs sautée fresh shrimp in a refreshing lemon, wine and butter sauce. This shrimp scampi is served over savory long-grain rice, topped with marinated artichoke hearts and oven-roasted tomatoes. Finished with a pinch of buttery parmesan cheese, this meal will impress the most discerning palates.",
+    "slug": null,
+    "base_sku": "SH_SCP",
+    "sku": "SH_SCP(696854)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Water, Shrimp, Tomatoes, White Rice, Artichoke Hearts, Expeller Pressed Canola Oil, Roasted Tomatoes (Tomatoes, Canola Oil, Garlic, Vinegar, Oregano, Salt), Butter (Cream, Natural Flavoring), Lemon Juice, Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Garlic, White Balsamic Vinegar (Wine Vinegar, Concentrated Grape Must), Chablis, Honey, Sea Salt, Red Wine Vinegar (Red Wine Vinegar, Water), Spices, Nutritional Yeast, Dehydrated Garlic, Xanthan Gum, Citric Acid, Natural Flavor.",
+    "containedAllergens": [
+      "Milk",
+      "Shellfish (shrimp)"
+    ],
+    "options": {},
+    "sideDishName": "Long-Grain Rice",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 347.0,
+        "valueLabel": "347"
+      },
+      "calories": {
+        "value": 520.0,
+        "valueLabel": "520"
+      },
+      "protein": {
+        "value": 30.0,
+        "valueLabel": "30"
+      },
+      "caloriesFromFat": {
+        "value": 220.0,
+        "valueLabel": "220"
+      },
+      "totalFat": {
+        "value": 25.0,
+        "valueLabel": "25",
+        "fdaDailyPercent": 38,
+        "fdaDailyPercentLabel": "38"
+      },
+      "saturatedFat": {
+        "value": 7.0,
+        "valueLabel": "7",
+        "fdaDailyPercent": 35,
+        "fdaDailyPercentLabel": "35"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 49.0,
+        "valueLabel": "49",
+        "fdaDailyPercent": 16,
+        "fdaDailyPercentLabel": "16"
+      },
+      "cholesterol": {
+        "value": 200.0,
+        "valueLabel": "200",
+        "fdaDailyPercent": 67,
+        "fdaDailyPercentLabel": "67"
+      },
+      "sodium": {
+        "value": 570.0,
+        "valueLabel": "570",
+        "fdaDailyPercent": 24,
+        "fdaDailyPercentLabel": "24"
+      },
+      "dietaryFiber": {
+        "value": 5.0,
+        "valueLabel": "5",
+        "fdaDailyPercent": 20,
+        "fdaDailyPercentLabel": "20"
+      },
+      "sugars": {
+        "value": 6.0,
+        "valueLabel": "6"
+      },
+      "vitaminA": {
+        "value": 35.0,
+        "valueLabel": "35"
+      },
+      "vitaminC": {
+        "value": 220.0,
+        "valueLabel": "220"
+      },
+      "calcium": {
+        "value": 20.0,
+        "valueLabel": "20"
+      },
+      "iron": {
+        "value": 25.0,
+        "valueLabel": "25"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Shrimp Scampi with Long-Grain Rice",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-47686636-316f-46a0-bf16-5391a42b9b22.jpg"
+    },
+    "mainRatingRecentAverageNormalized": 4.0,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          "میگو"
+        ],
+        "description": "آشپزهای ما میگو تازه را در لیمو, شراب و سس کره میگذراند. این اسکامپی میگو همراه با برنج دانه بلند خوش عطر و طعم سرو میشود که روی آن سیبزمینی کباب شده با سبزیجات معطر گذاشته شده است. در آخر روی این غذا پنیر پارمزان تف داده شده با کره ریخته شده است. این غذا سخت سلیقه ترین آدم ها را نیز تحت تاثیر خود قرار میدهد.",
+        "displayName": "اسکامپی میگو همراه با برنج دانه بلند",
+        "ingredients": "آب، میگو، گوجه‌فرنگی، برنج سفید، کنگر فرنگی، روغن کانولا اکسپرس، گوجه‌فرنگی کباب‌شده (گوجه‌فرنگی، روغن کانولا، سیر، سرکه، مرزنگوش، نمک)، کره (خامه، طعم‌دهنده‌های طبیعی)، آب لیموترش، پنیر پارمزان (شیر، مخمر پنیر، نمک، آنزیم‌ها، سلولز)، سیر، سرکه بالزامیک سفید (سرکه شراب، پوراب عصاره انگور)، شراب سفید چابلیس، عسل، نمک دریا، سرکه شراب قرمز (سرکه شراب قرمز، آب)، ادویه‌جات، مخمر تغذیه‌ای، سیر خشک‌شده، صمغ زانتان، اسید سیتریک، طعم‌دهنده‌های طبیعی",
+        "name": "اسکامپی میگو",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "برنج دانه بلند",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696868",
+    "typeId": "1",
+    "foodGroups": [
+      "5"
+    ],
+    "name": "Cod Cakes",
+    "description": "Our chefs created this playful dish for fish lovers and fish dabblers alike. We balance cod’s delicate flavor with a vibrant mix of roasted veggies, Parmesan cheese, and fragrant herbs and spices, and top the fish cakes with a tangy chipotle vinaigrette. We cooked up two complementary sides to round out this high-fiber dish: roasted herb potatoes made with nutrient-filled, skin-on red potatoes and a colorful Southern succotash of lima beans, corn, and bell peppers. Bring out the bright flavors with a squeeze of fresh lemon or a sprinkling of red pepper flakes.",
+    "slug": null,
+    "base_sku": "COD_CX",
+    "sku": "COD_CX(696868)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Potatoes, Corn, Cod, Lima Beans, Bell Peppers, Expeller Pressed Canola Oil, Onion, Eggs (Eggs, Citric Acid), Parmesan Cheese (Milk, Cheese Cultures, Salt, Enzymes, Cellulose), Spices, Rice Vinegar (Rice Wine Vinegar, Water), Greek Yogurt (Cultured Milk), Green Onion, Butter (Cream, Natural Flavoring), Garlic, Water, Honey, Sea Salt, Vegetable Stock (White Wine, Carrot Stock, Onion Stock, Celery Stock, Lemon Juice, Tomato Paste, Water, Salt, Roasted Garlic Powder, Onion Powder, Spices), Lemon Juice, Lime Juice, Mustard (Water, Mustard Seeds, Vinegar, Salt), Paprika, Sunflower Lecithin, Dehydrated Garlic, Nutritional Yeast, Xanthan Gum.",
+    "containedAllergens": [
+      "Milk",
+      "Egg",
+      "Fish"
+    ],
+    "options": {},
+    "sideDishName": "Southern Succotash \u0026 Herb Potatoes",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 340.0,
+        "valueLabel": "340"
+      },
+      "calories": {
+        "value": 600.0,
+        "valueLabel": "600"
+      },
+      "protein": {
+        "value": 2.0,
+        "valueLabel": "22"
+      },
+      "caloriesFromFat": {
+        "value": 28.0,
+        "valueLabel": "28"
+      },
+      "totalFat": {
+        "value": 31.0,
+        "valueLabel": "31",
+        "fdaDailyPercent": 48,
+        "fdaDailyPercentLabel": "48"
+      },
+      "saturatedFat": {
+        "value": 5.0,
+        "valueLabel": "5",
+        "fdaDailyPercent": 25,
+        "fdaDailyPercentLabel": "25"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 62.0,
+        "valueLabel": "62",
+        "fdaDailyPercent": 21,
+        "fdaDailyPercentLabel": "21"
+      },
+      "cholesterol": {
+        "value": 80.0,
+        "valueLabel": "80",
+        "fdaDailyPercent": 27,
+        "fdaDailyPercentLabel": "27"
+      },
+      "sodium": {
+        "value": 660.0,
+        "valueLabel": "660",
+        "fdaDailyPercent": 28,
+        "fdaDailyPercentLabel": "28"
+      },
+      "dietaryFiber": {
+        "value": 7.0,
+        "valueLabel": "7",
+        "fdaDailyPercent": 28,
+        "fdaDailyPercentLabel": "28"
+      },
+      "sugars": {
+        "value": 10.0,
+        "valueLabel": "10"
+      },
+      "vitaminA": {
+        "value": 35.0,
+        "valueLabel": "35"
+      },
+      "vitaminC": {
+        "value": 110.0,
+        "valueLabel": "110"
+      },
+      "calcium": {
+        "value": 12.0,
+        "valueLabel": "12"
+      },
+      "iron": {
+        "value": 20.0,
+        "valueLabel": "20"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Cod Cakes with Southern Succotash \u0026 Herb Potatoes",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-c7e4f3d1-b978-48e6-9678-5b06125b2cc1.jpg"
+    },
+    "mainRatingRecentAverageNormalized": null,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          " آجیل ( بادام)"
+        ],
+        "description": "دلچسب و خوشمزه مُغَذّی، ما مرغ کباب‌شده آبدارمان را با آب مرغ و سبزیجات معطر تکمیل میکنیم. این غذا با برنج مخلوطی که شامل سه دانه روغنیست سرو می‌شود. همچنین در کنار آن لوبیا سبز تُرد و هویج قلمی که در روغن همراه با سیر تف داده‌شده قرار دارد.",
+        "displayName": "مرغ با برنج مخلوط همراه با لوبیا سبز و هویج",
+        "ingredients": "برنج قهوه‌ای پخته‌شده، سینه مرغ، لوبیا سبز، آب، برنج وحشی پخته‌شده، هویج، برنج قرمز، آب مرغ پخته‌شده (آب مرغ، آب مرغ بریان شده، سبزیجات پخته‌شده (هویج، کرفس، پیاز)، مرغ دودی، نمک، ژلاتین، نمک دریا، شراب سفید)، روغن کانولا فشرده‌شده، کرفس، فلفل دلمه‌ای، بادام، سیر، نمک دریا، چربی مرغ، آرد برنج، آرد کاساوا، کره (خامه، طعم‌دهنده‌های طبیعی)، ادویه‌جات، جوش شیرین",
+        "name": "مرغ با برنج مخلوط",
+        "options": {},
+        "prettyOptionsLabel": null,
+        "sideDishName": "لوبیا سبز و هویج",
+        "slug": "",
+        "type": "غذای اصلی"
+      }
+    }
+  },
+  {
+    "id": "696869",
+    "typeId": "1",
+    "foodGroups": [
+      "5"
+    ],
+    "name": "Carved Turkey",
+    "description": "For this festive turkey dish, we wanted to capture all the comforts of a home-cooked holiday feast. Our all-natural turkey is slow roasted until super tender, and topped with a thick diced-apple compote for a bit of sweet contrast. Speaking of sweet—we prepare our mashed sweet potatoes with a touch of honey, making them a perfect partner for the super-savory Brussels sprouts mixed with all-natural, uncured bacon and roasted mushrooms.\n\nTo further enhance the play on sweet and savory, try sprinkling a little cinnamon on your sweet potatoes and adding shredded Parmesan to the Brussels sprouts.",
+    "slug": null,
+    "base_sku": "TRK_CAR",
+    "sku": "TRK_CAR(696869)",
+    "categories": [
+      "main"
+    ],
+    "ingredients": "Turkey (Turkey Breast, Water, Canola Oil, Salt, Black Pepper), Sweet Potatoes, Brussels Sprouts, Mushrooms, Apples, Onion, Honey, Bacon (Pork, Water, Less than 2% Salt, Vinegar, Celery Powder), Maple Syrup, Apple Juice (Water, Apple Juice Concentrate, Ascorbic Acid), Expeller Pressed Canola Oil, Water, Chicken Stock (Chicken Broth, Natural Flavors, Mirepoix Stock (Carrot, Onion and Celery Juices), Gelatin, White Wine), Cassava Flour, Sea Salt, Xanthan Gum, Dehydrated Garlic, Spices.",
+    "containedAllergens": [],
+    "options": {},
+    "sideDishName": "Sweet Potatoes \u0026 Brussels Sprouts",
+    "nutritionWithDailyValues": {
+      "servingUnit": {
+        "value": 1.0,
+        "valueLabel": "1"
+      },
+      "servingSize": {
+        "value": 369.0,
+        "valueLabel": "369"
+      },
+      "calories": {
+        "value": 440.0,
+        "valueLabel": "440"
+      },
+      "protein": {
+        "value": 36.0,
+        "valueLabel": "36"
+      },
+      "caloriesFromFat": {
+        "value": 100.0,
+        "valueLabel": "100"
+      },
+      "totalFat": {
+        "value": 11.0,
+        "valueLabel": "11",
+        "fdaDailyPercent": 17,
+        "fdaDailyPercentLabel": "17"
+      },
+      "saturatedFat": {
+        "value": 1.0,
+        "valueLabel": "1",
+        "fdaDailyPercent": 5,
+        "fdaDailyPercentLabel": "5"
+      },
+      "transFat": {
+        "value": 0.0,
+        "valueLabel": "0"
+      },
+      "carbohydrates": {
+        "value": 52.0,
+        "valueLabel": "52",
+        "fdaDailyPercent": 17,
+        "fdaDailyPercentLabel": "17"
+      },
+      "cholesterol": {
+        "value": 60.0,
+        "valueLabel": "60",
+        "fdaDailyPercent": 20,
+        "fdaDailyPercentLabel": "20"
+      },
+      "sodium": {
+        "value": 530,
+        "valueLabel": "530",
+        "fdaDailyPercent": 22,
+        "fdaDailyPercentLabel": "22"
+      },
+      "dietaryFiber": {
+        "value": 8.0,
+        "valueLabel": "8",
+        "fdaDailyPercent": 32,
+        "fdaDailyPercentLabel": "32"
+      },
+      "sugars": {
+        "value": 26.0,
+        "valueLabel": "26"
+      },
+      "vitaminA": {
+        "value": 410.0,
+        "valueLabel": "410"
+      },
+      "vitaminC": {
+        "value": 160.0,
+        "valueLabel": "160"
+      },
+      "calcium": {
+        "value": 8.0,
+        "valueLabel": "8"
+      },
+      "iron": {
+        "value": 15.0,
+        "valueLabel": "15"
+      }
+    },
+    "prettyOptionsLabel": null,
+    "displayName": "Carved Turkey with Sweet Potatoes \u0026 Brussels Sprouts",
+    "mealImageUrls": {
+      "large": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_683,q_auto,w_1024/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg",
+      "medium": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_341,q_auto,w_512/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg",
+      "small": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_213,q_auto,w_320/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg",
+      "square": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_500,q_auto,w_500/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg",
+      "thumb": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_200,q_auto,w_200/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg",
+      "ios_2x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_600,q_auto,w_600/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg",
+      "ios_3x": "https://res.cloudinary.com/freshly/image/upload/c_fill,f_auto,h_900,q_auto,w_900/production-meal-image-9f6acb3a-2d96-4811-8f98-9062811d39d6.jpg"
+    },
+    "mainRatingRecentAverageNormalized": null,
+    "t": {
+      "fa": {
+        "categories": [
+          "غذای اصلی"
+        ],
+        "containedAllergens": [
+          "لبنیات (شیر)",
+          " آجیل ( بادام)"
+        ],
         "description": "دلچسب و خوشمزه مُغَذّی، ما مرغ کباب‌شده آبدارمان را با آب مرغ و سبزیجات معطر تکمیل میکنیم. این غذا با برنج مخلوطی که شامل سه دانه روغنیست سرو می‌شود. همچنین در کنار آن لوبیا سبز تُرد و هویج قلمی که در روغن همراه با سیر تف داده‌شده قرار دارد.",
         "displayName": "مرغ با برنج مخلوط همراه با لوبیا سبز و هویج",
         "ingredients": "برنج قهوه‌ای پخته‌شده، سینه مرغ، لوبیا سبز، آب، برنج وحشی پخته‌شده، هویج، برنج قرمز، آب مرغ پخته‌شده (آب مرغ، آب مرغ بریان شده، سبزیجات پخته‌شده (هویج، کرفس، پیاز)، مرغ دودی، نمک، ژلاتین، نمک دریا، شراب سفید)، روغن کانولا فشرده‌شده، کرفس، فلفل دلمه‌ای، بادام، سیر، نمک دریا، چربی مرغ، آرد برنج، آرد کاساوا، کره (خامه، طعم‌دهنده‌های طبیعی)، ادویه‌جات، جوش شیرین",

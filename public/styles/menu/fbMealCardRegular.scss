@@ -22,10 +22,12 @@
   align-items: center;
   font-size: inherit;
 }
-.fbMealCardRegular--counter--plus {
-  padding: 9px;
+.fbMealCardRegular--counter--btn {
   font-size: 1.7rem;
-  height: 1.7rem;
+  display: flex;
+  padding: 9px;
+}
+.fbMealCardRegular--counter--plus {
   background-color: $mountainMeadow;
   color: white;
 
@@ -34,15 +36,28 @@
     background-color: darken($mountainMeadow, 10%);
   }
 }
+.fbMealCardRegular--counter--plus-isDisabled {
+  background-color: lighten($mountainMeadow, 30%) !important;
+
+  &:hover {
+    cursor: not-allowed !important;
+  }
+}
 .fbMealCardRegular--counter--minus {
-  padding: 9px;
-  font-size: 1.7rem;
-  height: 1.7rem;
   background-color: lighten($aluminum, 30%);
   color: white;
+
   &:hover {
     color: white;
     cursor: not-allowed;
+  }
+}
+.fbMealCardRegular--counter--minus-isActive {
+  background-color: $stardust !important;
+
+  &:hover {
+    background-color: $monsoon !important;
+    cursor: pointer !important;
   }
 }
 .fbMealCardRegular--counter--count {
@@ -60,8 +75,12 @@
   vertical-align: middle;
   width: 40%;
 }
+.fbMealCardRegular--counter--count-isActive {
+  color: $deepFir;
+}
 
 .fbMealCardRegular--price {
+  margin-top: 1rem;
   font-size: inherit;
   text-align: center;
   line-height: 2.5rem;

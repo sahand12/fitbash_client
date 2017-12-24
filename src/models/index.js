@@ -11,7 +11,8 @@ type NutritionValueWithFDA = {
 };
 export type Meal = {
   id: string,
-  type: string, // 'MealMain'
+  typeId: string, // Foreign key to mealTypes section
+  foodGroups: Array<string>,
   name: string, // 'Penne Bolognese',
   description: string,
   slug: string,
@@ -102,7 +103,6 @@ export type MealBadge = {
   badgeId: string,
   sortOrder: number,
 };
-
 export type Badge = {
   id: string,
   label: string,
@@ -136,9 +136,23 @@ export type MealPrice = {
   mealId: string,
   startDate: string,
   endDate?: string,
-  priceHash: {
+  priceHash: Array<{
+    country: string,
     currency: string,
     amount: number,
     precision: number,
-  }
+  }>,
 }
+export type Ingredient = {
+  id: string,
+  name: string,
+  type: 'Vegetable' | 'Fruit' | 'Meal' | 'Dairy' | 'Processed Food' | '',
+  description: string,
+  children: Array<string>,
+  t: {
+    fa: {
+      name: string,
+      description: string,
+    }
+  },
+};
