@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Landing from './Landing';
 import FBMenuPage from './public/menu-page/FBMenuPage';
 import FBMenu from './public/menu/FBMenu';
-import FBMealDetails from "./public/meal-details/index";
+import FBMealDetails from './public/meal-details/index';
 
 const App = () => (
   <BrowserRouter>

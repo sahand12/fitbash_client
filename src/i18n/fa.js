@@ -156,6 +156,13 @@ export const FA = {
     spicedChickenAndRice: {
       name: 'سینه‌مرغ اسپایسی با برنج مخلوط'
     }
+  },
+  mealDetails: {
+    tabs: {
+      details: 'توضیحات',
+      ingredients: 'مواد تشکیل‌دهنده',
+      nutrition: 'ارزش غذایی',
+    }
   }
 };
 

@@ -4,6 +4,7 @@ import React, {Component, type Element} from 'react';
 import type {Meal, MealPrice} from "../../models/index";
 import meals from '../../mock-data/meals.json';
 import mealPrices from '../../mock-data/mealPrices.json';
+import FBMealDetailsTabs from './FBMealDetailsTabs';
 
 const country = 'iran';
 const locale = 'fa';
@@ -61,9 +62,7 @@ class FBMealDetails extends Component<Props> {
   renderTabs(): Element<'div'> {
     return (
       <div className="fbMealDetails--tabs">
-        <FBTab
-          items
-        />
+        <FBMealDetailsTabs meal={this.props.meal}/>
       </div>
     );
   }
