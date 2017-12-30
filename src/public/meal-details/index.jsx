@@ -27,22 +27,13 @@ class FBMealDetails extends Component<Props> {
     isOrderable: false
   };
 
-  constructor(props: Props) {
-    super(props);
-
-    this.renderBadges = this.renderBadges.bind(this);
-    this.renderImage = this.renderImage.bind(this);
-    this.renderOptions = this.renderOptions.bind(this);
-    this.renderTabs = this.renderTabs.bind(this);
-    this.renderTitle = this.renderTitle.bind(this);
-  }
-
-  renderBadges(): Element<'div'> {
+  renderBadges = (): Element<'div'> => {
     return (
       <div className="fbMealDetails--badgesWrapper">badges</div>
     );
-  }
-  renderImage(): Element<'div'> {
+  };
+
+  renderImage = (): Element<'div'> => {
     const {meal} = this.props;
     return (
       <div className="fbMealDetails--image">
@@ -53,27 +44,30 @@ class FBMealDetails extends Component<Props> {
         />
       </div>
     );
-  }
-  renderOptions(): Element<'div'> {
+  };
+
+  renderOptions = (): Element<'div'> => {
     return (
       <div className="fbMealDetails--">image</div>
     );
-  }
-  renderTabs(): Element<'div'> {
+  };
+
+  renderTabs = (): Element<'div'> => {
     return (
       <div className="fbMealDetails--tabs">
         <FBMealDetailsTabs meal={this.props.meal}/>
       </div>
     );
-  }
-  renderTitle(): Element<'div'> {
+  };
+
+  renderTitle = (): Element<'div'> => {
     const {meal} = this.props;
     return (
       <div className="fbMealDetails--titleWrapper">
         <h1 className="fbMealDetails--title">{meal.t[locale].name}</h1>
       </div>
     );
-  }
+  };
 
   render(): Element<*> {
     return (

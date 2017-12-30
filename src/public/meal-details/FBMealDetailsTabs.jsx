@@ -12,7 +12,6 @@ import t from '../../i18n';
 const locale = 'fa';
 const titles = ['details', 'ingredients', 'nutrition'];
 
-
 class FBMealDetailsTabs extends Component<
   {meal: Meal}
 > {
@@ -20,9 +19,11 @@ class FBMealDetailsTabs extends Component<
   renderDescription = () => {
     return this.props.meal.t[locale].description;
   };
+
   renderIngredients = () => {
     return this.props.meal.t[locale].ingredients;
   };
+
   renderNutritionTable = () => {
     return (
       <code><pre>
@@ -33,13 +34,22 @@ class FBMealDetailsTabs extends Component<
   
   render() {
     return (
-      <FBTabs>
-        <FBTabList>
+      <FBTabs className='fbMealDetailsTabs'>
+        <FBTabList className='fbMealDetailsTabs--tabList'>
           {titles.map(title => (
-            <FBTab key={title}>{t(`mealDetails.tabs.${title}`)}</FBTab>
+            <FBTab
+              key={title}
+              activeClassName='fbMealDetailsTabs--tab-isActive'
+              className='fbMealDetailsTabs--tab'
+            >
+              <div className='fbMealDetailsTabs--tab--text'>
+                {t(`mealDetails.tabs.${title}`)}
+              </div>
+              <div className='fbMealDetailsTabs--tab--box'/>
+            </FBTab>
           ))}
         </FBTabList>
-        <FBTabPanels>
+        <FBTabPanels className='fbMealDetailsTabs--tabPanels'>
           <FBTabPanel>{this.renderDescription()}</FBTabPanel>
           <FBTabPanel>{this.renderIngredients()}</FBTabPanel>
           <FBTabPanel>{this.renderNutritionTable()}</FBTabPanel>

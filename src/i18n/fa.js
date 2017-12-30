@@ -160,7 +160,7 @@ export const FA = {
   mealDetails: {
     tabs: {
       details: 'توضیحات',
-      ingredients: 'مواد تشکیل‌دهنده',
+      ingredients: 'ترکیبات',
       nutrition: 'ارزش غذایی',
     }
   }

@@ -1,0 +1,51 @@
+@import "../vars";
+
+.fbMealDetailsTabs {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.fbMealDetailsTabs--tabList {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.fbMealDetailsTabs--tab {
+  position: relative;
+  font-weight: 100;
+  line-height: 35rem;
+  text-align: center;
+  flex: 0 0 calc(33% + 13px);
+  height: 4rem;
+}
+.fbMealDetailsTabs--tab-isActive {
+  background: white !important;
+  font-weight: 900;
+  z-index: 2;
+}
+.fbMealDetailsTabs--tab--text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  transform: translateZ(35px);
+  z-index: 3;
+  text-align: center;
+}
+.fbMealDetailsTabs--tab--box {
+  height: 4rem;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  margin: 0 10px 0;
+  transform: perspective(100px) rotateX(30deg);
+}
+
+.fbMealDetailsTabs--tabPanels {
+  padding: 1.6rem;
+  font-weight: 100;
+  font-size: 1.3rem;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+}
