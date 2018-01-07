@@ -1,84 +1,145 @@
-function Node(data) {
-  this.data = data;
-  this.parent = null;
-  this.children = [];
+// @flow
+export class TreeNode {
+  constructor(data: string) {
+    this.data = data;
+    this.children = [];
+    this.parent = null;
+    this.depth = 0;
+    this.id = String(Math.random());
+  }
+  hasChildren(): boolean {
+    return this.children.length > 0;
+  }
+  getIndexInParent(): number {
+    if (this.hasParent()) {
+      return this.parent.children.indexOf(this);
+    }
+    return -1; // it means this is the root node
+  }
+  nextSibling(): TreeNode {
+    if (this.hasNextSibling()) {
+      return this.parent.children[this.getIndexInParent() + 1];
+    }
+    return null;
+  }
+  isLastChild(): boolean {
+    if (!this.hasParent()) { return true; }
+    if (this.parent.children.indexOf(this) === this.parent.children.length - 1) {
+      return true;
+    }
+    return false;
+  }
+  hasParent() {
+    return this.parent !== null;
+  }
+  hasNextSibling() {
+    return this.hasParent() && !this.isLastChild();
+  }
+  setData(data: string) { this.data = data; }
+  setParent(parentNode: TreeNode) { this.parent = parentNode; }
+  setDepth(depth: number) { this.depth = depth; }
+  add(childData: string) {
+    const newNode = new TreeNode(childData);
+    this.addNode(newNode);
+  }
+  addNode(childNode: TreeNode) {
+    childNode.setParent(this);
+    childNode.setDepth(this.depth + 1);
+    this.children.push(childNode);
+  }
 }
 
-function Tree(data) {
-  const node = new Node(data);
-  this._root = node;
+export class Tree {
+  constructor(node: TreeNode) {
+    this.root = node;
+    node.setDepth(0);
+  }
+  
+  map(fn: Function): Tree {
+    (function traverse(node: TreeNode): TreeNode {
+      for (let i = 0, len = node.children.length; i < len; i += 1) {
+        traverse(node.children[i]);
+      }
+      node.setData(fn(node.data));
+    })(this.root);
+    return this;
+  }
+
+  reduce(fn: Function, initStructure: any): Tree {
+    let result = initStructure;
+    this.traverseBF(node => {
+      result = fn(result, node);
+    });
+    return result;
+  }
+
+  traverseBF(callback) {
+    const self = this;
+    (function recurse(node: TreeNode, queue = [self.root]) {
+      callback(node);
+      for (let i = 0, len = node.children.length; i < len; i += 1) {
+        queue.unshift(node.children[i]);
+        recurse(node.children[i], queue);
+      }
+    })(this.root);
+  }
+
+  traverseDF(callback) {
+    (function recurse(node: TreeNode) {
+      for (let i = 0, len = node.children.length; i < len; i += 1) {
+        recurse(node.children[i]);
+      }
+      callback(node);
+    })(this.root);
+  }
 }
 
-Tree.prototype.traversDF = function (callback) {
-  // this is a recurse and immediately-invoking function
-  (function recurse(currentNode) {
-    for (let i = 0; i < currentNode.children.length; i++) {
-      recurse(currentNode.children);
+export function createTree(treeName: string, treeRawString: string) {
+  const root = new TreeNode(treeName);
+  const tree = new Tree(root);
+  const open = /\(/;
+  const close = /\)/;
+  const comma = /,|،/;
+  const dot = /\./;
+  let input = treeRawString.trim();
+  
+  // Make sure we have a `.` at the end
+  input = /\.$/.test(input) ? input : `${input}.`;
+
+  let char;
+  let lastChar = '@';
+  let word = '';
+  let parent = root;
+  let child = null;
+  for (let i = 0, len = input.length; i < len; i += 1) {
+    char = input[i];
+    if (open.test(char)) {
+      child = new TreeNode(word.trim());
+      parent.addNode(child);
+      word = '';
+      parent = child;
     }
-    callback(currentNode);
-  })(this._root);
-};
-
-Tree.prototype.traverseBF = function traverseBF(callback) {
-  const queue = [];
-  queue.push(this._root);
-  
-  let currentTree = queue.shift();
-  while (currentTree) {
-    for (let i = 0; i < currentTree.children.length; i++) {
-      queue.push(currentTree.children[i]);
+    else if (close.test(char)) {
+      if (close.test(lastChar)) {
+        parent = parent.parent; // eslint-disable-line prefer-destructuring
+      } else {
+        parent.add(word.trim());
+        word = '';
+        parent = parent.parent; // eslint-disable-line prefer-destructuring
+      }
     }
-    
-    callback(currentTree);
-    currentTree = queue.shift();
-  }
-};
-
-Tree.prototype.contains = function contains(callback, traversal) {
-  'use strict';
-  traversal.call(this, callback);
-};
-
-Tree.prototype.add = function add(data, toData, traversal) {
-  const child = new Node(data);
-  let parent = null;
-  const callback = function callback(node) {
-    'use strict';
-    if (node.data === toData) {
-      parent = node;
+    else if (dot.test(char) || comma.test(char)) {
+      word = word.trim();
+      if (word !== '') {
+        parent.add(word);
+        word = '';
+      }
     }
-  };
-  
-  this.contains(callback, traversal);
-  
-  if (parent) {
-    parent.children.push(child);
-    child.parent = parent;
+    else {
+      word += char;
+    }
+    lastChar = char;
   }
-  else {
-    throw new Error('Cannot add node to a non-existent parent.');
-  }
-};
 
-Tree.prototype.remove = function remove(data, fromData, traversal) {
-  const tree = this;
-  let parent = null;
-  let childToRemove = null;
-  let index;
-  const callback = function callback(node) {
-    if (node.parent === fromData) { parent = node; }
-  };
-  
-  this.contains(callback, traversal);
-  
-  if (parent) {
-    index = parent.children.indexOf(data);
-    if (index < 0) { throw new Error('Node to remove does not exist.'); }
-    else { childToRemove = parent.children.splice(index, 1); }
-  }
-  else {
-    throw new Error('Parent does not exist.');
-  }
-  
-  return childToRemove;
-};
+  return tree;
+}

@@ -22,7 +22,7 @@ class FBMealDetails extends Component<Props> {
   renderTitle: () => Element<'div'>;
 
   static defaultProps = {
-    meal: meals[0],
+    meal: meals[2],
     mealPrice: mealPrices[0],
     isOrderable: false
   };
@@ -53,6 +53,7 @@ class FBMealDetails extends Component<Props> {
   };
 
   renderTabs = (): Element<'div'> => {
+    console.log(this.props.meal.t.fa.ingredients);
     return (
       <div className="fbMealDetails--tabs">
         <FBMealDetailsTabs meal={this.props.meal}/>

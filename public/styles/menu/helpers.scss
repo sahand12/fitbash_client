@@ -15,6 +15,95 @@
   flex: 0 0 50%;
 }
 
+// @Todo: refactor this as a mixin
+.fbText-light-xs {
+  font-weight: 100;
+  font-size: 1rem;
+}
+.fbText-light-s {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+.fbText-light-m {
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.fbText-light-l {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.fbText-light-xl {
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+.fbText-light-xxl {
+  font-weight: 100;
+  font-size: 2rem;
+}
+.fbText-light-xxxl {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.fbText-normal-xs {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.fbText-normal-s {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.fbText-normal-m {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.fbText-normal-l {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.fbText-normal-xl {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.fbText-normal-xxl {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.fbText-normal-xxxl {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.fbText-bold-xs {
+  font-weight: 900;
+  font-size: 1rem;
+}
+.fbText-bold-s {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.fbText-bold-m {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.fbText-bold-l {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.fbText-bold-xl {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.fbText-bold-xxl {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.fbText-bold-xxxl {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+
 @media only screen and (min-width: $phoneBreakPoint) {
   .fbRow-5-2--col {
     flex: 0 0 20%;

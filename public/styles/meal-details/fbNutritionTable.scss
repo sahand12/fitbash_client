@@ -1,0 +1,52 @@
+@import "../vars";
+.fbNutritionTable {}
+.fbNutritionTable--heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -2rem 1.8rem -2rem;
+}
+.fbNutritionTable--heading--item {
+  width: 33.333333%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  border-right: 1px solid $zircon;
+
+  span {
+    font-size: 1.5rem;
+  }
+  small {
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+}
+.fbNutritionTable--heading--item:first-child {
+  border: none;
+}
+
+.fbNutritionTable--body {
+  border-top: 1px solid $zircon;
+  padding-top: 1.8rem;
+}
+.fbNutritionTable--body--title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fbNutritionTable--footer {
+  margin-top: 2rem;
+}
+.fbRow {
+  box-sizing: content-box;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $oxley;
+}
+.fbCell {
+  text-align: right;
+}
+.fbCell-leftAligned {
+  text-align: left;
+}

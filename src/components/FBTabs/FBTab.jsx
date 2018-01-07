@@ -5,7 +5,14 @@ import React, {Component, type Node} from 'react';
 import cx from 'classnames';
 
 export default class FBTab extends Component<
-  {activeClassName: string, children: Node, className: string, isActive: boolean, isDisabled?: boolean, onSelect: Function}
+  {
+    activeClassName: string,
+    children: Node,
+    className?: string,
+    isActive: boolean,
+    isDisabled?: boolean,
+    onSelect: Function
+  }
 > {
   static defaultProps = {isDisabled: false, className: '', activeClassName: ''};
   
@@ -13,7 +20,6 @@ export default class FBTab extends Component<
     const {activeClassName, children, isActive, isDisabled, onSelect} = this.props;
     const className = cx(this.props.className, {
       'fbTabs--tab': true,
-      'fbTabs--tab-isActive': isActive,
       [activeClassName]: isActive,
       'fbTabs--tab-isDisabled': isDisabled,
 

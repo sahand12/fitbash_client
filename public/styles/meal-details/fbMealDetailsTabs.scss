@@ -5,7 +5,10 @@
   line-height: 2.5rem;
 }
 .fbMealDetailsTabs--tabList {
+  box-sizing: border-box;
   display: flex;
+  padding: 0 1.5%;
+  justify-content: space-between;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -13,39 +16,48 @@
 .fbMealDetailsTabs--tab {
   position: relative;
   font-weight: 100;
-  line-height: 35rem;
+  line-height: 3.5rem;
   text-align: center;
-  flex: 0 0 calc(33% + 13px);
-  height: 4rem;
+  flex: 0 0 33.33333%;
+  height: 3.5rem;
+  z-index: 1;
+  // https://stackoverflow.com/questions/5472802/css-z-index-lost-after-webkit-transform-translate3d
+  -webkit-transform: translate3d(0,0,0);
+
 }
 .fbMealDetailsTabs--tab-isActive {
-  background: white !important;
   font-weight: 900;
   z-index: 2;
+
+  .fbMealDetailsTabs--tab--box {
+    background-color: white;
+  }
 }
 .fbMealDetailsTabs--tab--text {
   position: absolute;
   left: 0;
+  top: 2px;
   right: 0;
+  z-index: 3;
   font-size: inherit;
   font-weight: inherit;
   transform: translateZ(35px);
-  z-index: 3;
-  text-align: center;
 }
 .fbMealDetailsTabs--tab--box {
   height: 4rem;
-  background-color: #e1e1e1;
+  background-color: $zircon;
   border-radius: 3px;
-  border: 1px solid #e1e1e1;
-  margin: 0 10px 0;
+  border: 1px solid $zircon;
+  border-bottom-color: white;
   transform: perspective(100px) rotateX(30deg);
 }
 
 .fbMealDetailsTabs--tabPanels {
+  background-color: white;
   padding: 1.6rem;
   font-weight: 100;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  line-height: 25px;
   border: 1px solid #e1e1e1;
   border-top: none;
 }
